@@ -1,6 +1,12 @@
+// Description: chains data
+// commented by: Cheryl (Yingqiu) Cao
+// Date: 2022-09-03
+
+
 #ifndef DESERIALIZER_H
 #define DESERIALIZER_H
 
+// n is the number of data getting chained together
 template<typename DTYPE_SERIAL, typename DTYPE, int n>
 class Deserializer{
 public:
@@ -35,7 +41,10 @@ void CCS_BLOCK(run)(ac_channel<uint_16> &inputChannel,
                     ac_channel<Params> &outputChannel2,
                     ac_channel<Params> &outputChannel3)
     {
-        Params params;
+        Params params;  // Params structure defined in "conv.h"
+
+        // reads all parameters and put the same parameters to 3 output
+        // channels (for ifmap, weight, and systolic array)
         
         params.OY1 = inputChannel.read();
         params.OX1 = inputChannel.read();

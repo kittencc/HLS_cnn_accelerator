@@ -21,6 +21,8 @@ struct chanStruct{
 typedef ac_int<16, false> uint_16;
 typedef ac_int<32, false> uint_32;
 typedef ac_int<64, false> uint_64;
+
+// parameters for the cnn
 struct Params {
    uint_16 OY1;
    uint_16 OX1;

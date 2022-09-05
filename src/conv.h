@@ -4,11 +4,15 @@
 #include <ac_int.h>
 #include <ac_channel.h>
 
+// "size_t" is a C++ keyword, the value must be a const or a constexpr!
 template <size_t width, size_t EXTENT_0>
 struct PackedInt {
-  ac_int<width> value[EXTENT_0];
+  ac_int<width> value[EXTENT_0]; // basically and array, EXTENT_0 as array width
 };
 
+
+// "typename" is a C++ keyword, indicating the variable is a placeholder
+// for a type
 template<typename T, int N>
 struct chanStruct{
   T data[N];
@@ -41,6 +45,7 @@ struct Params {
 #define WEIGHT_BUFFER_SIZE 128/2*1024/ARRAY_DIMENSION // Weight buffer size per OC0 per bank
 #define ACCUMULATION_BUFFER_SIZE 256
 
+//  data types for ifmap, weight and ofmap
 typedef ac_int<INPUT_PRECISION,true> IDTYPE; 
 typedef ac_int<WEIGHT_PRECISION,true> WDTYPE; 
 typedef ac_int<OUTPUT_PRECISION,true> ODTYPE; 

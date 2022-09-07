@@ -68,7 +68,6 @@ private:
 
     InputDoubleBuffer<INPUT_BUFFER_SIZE, ARRAY_DIMENSION, ARRAY_DIMENSION> inputDoubleBuffer;
     ac_channel<Params> inputDoubleBufferParams;
-    // where is "Params" defined?
 
     WeightDoubleBuffer<WEIGHT_BUFFER_SIZE, ARRAY_DIMENSION, ARRAY_DIMENSION> weightDoubleBuffer;
     ac_channel<Params> weightDoubleBufferParams;

@@ -1,3 +1,8 @@
+// Description: input double buffer
+// Author: Cheryl (Yingqiu) Cao
+// Updated on 2022-09-06
+//    - added code for writer();
+
 #ifndef INPUT_DOUBLE_BUFFER_H
 #define INPUT_DOUBLE_BUFFER_H
 
@@ -11,9 +16,73 @@ public:
                         ac_channel<IDTYPE> &din,
                         ac_channel<chanStruct<PackedInt<INPUT_PRECISION,IC0>,size> > &dout)
     {
+        // "size" is the depth for the memory used for the double buffer
+
         // -------------------------------
         // Your code starts here
         // -------------------------------
+
+        // load input parameters
+        Params params = paramsIn.read();
+
+        // derive the remaining cnn parameters
+        uint_16 IX0 = params.STRIDE*(params.OX0-1) + params.FX;
+        uint_16 IY0 = params.STRIDE*(params.OY0-1) + params.FY;
+
+        // determine the ifmap block_size for each bank
+        //  == IC1 * IX0 * IY0
+        #ifndef __SYNTHESIS__
+        // each ifmap block saves IC1*IY0*IX0 date entries
+        ac_int<ac::log2_ceil<size>::val, false> block_size = params.IC1 * IX0 * IY0;
+        // The memory size must be big enough for 1 block to fit
+        assert(block_size <= size);
+        #endif
+
+        // calculate the total # of ifmap banks to be written
+        uint_32 ifmap_write_bank_num = params.OY1 * params.OX1;
+
+
+        while(ifmap_write_bank_num > 0) {  // there are still ifmap banks to be written
+        
+          uint_16 page_idx = 0;
+          // The double buffer mem may hold more than one ifmap bank at
+          // the same time.
+          // Each page corresponds to one ifmap bank (IC1 * IY0 * IX0).
+          // For example, if the mem can hold 2 ifmap banks, page_idx in
+          // range of [0,1].
+
+          // one buffer for the output ac_channel
+          chanStruct<PackedInt<INPUT_PRECISION,IC0>,size> current_buffer;
+
+          while((ifmap_write_bank_num > 0) && ((page_idx + 1) * block_size <= size)) {
+            // Exit condition 1: remaining mem cannot hold one more
+            // page/ifmap bank;
+            // Exit condition 2: all banks written. there may be extra
+            // space in the mem.
+
+            // write one bank
+            for(int i = 0; i < block_size; i++) {
+
+               // variable to hold the input data
+              PackedInt<INPUT_PRECISION,IC0> chained_data;
+
+              // chaining the input data (deserialize)
+              #pragma hls_pipeline_init_interval 1
+              for(int j = 0; j < IC0; j++) {
+                chained_data.value[j] = din.read(); 
+              }
+
+              current_buffer.data[page_idx * block_size + i] = chained_data;
+            }
+
+            // completes one page/bank
+            page_idx++;
+            ifmap_write_bank_num--;
+          }
+
+          // outputs one completed buffer to the ac_channel
+          dout.write(current_buffer);
+        }
 
         // -------------------------------
         // Your code ends here
@@ -41,6 +110,7 @@ public:
     }
 };
 
+// "size" is the depth for the memory used for the double buffer
 template <int size, int IC0, int OC0>
 class InputDoubleBuffer{
 public:

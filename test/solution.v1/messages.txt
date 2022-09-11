@@ -4,83 +4,76 @@
 
 # Messages from "go analyze"
 
-solution file add ./src/ConvTb.cpp -exclude true
 go analyze
 solution file add ./src/Conv.cpp
 /INPUTFILES/1
-# Error: identifier "psum_reg" is undefined (CRD-20)
-Edison Design Group C++/C Front End - Version 5.0 (CIN-1)
-# Error:             instantiation of "void SystolicArrayCore<IDTYPE, WDTYPE, ODTYPE, OC0, IC0>::run(ac_channel<PackedInt<8UL, IC0>> &, ac_channel<PackedInt<8UL, OC0>> &, ac_channel<PackedInt<16UL, OC0>> &, ac_channel<Params> &, ac_channel<LoopIndices> &) [with IDTYPE=IDTYPE, WDTYPE=WDTYPE, ODTYPE=ODTYPE, OC0=16, IC0=16]" at line 48 of "/home/users/ctorng/work/cc/ee272-hw4/src/SystolicArray.h" (CRD-20)
-# Error:           detected during: (CRD-20)
-Front End called with arguments: -I./src -- /home/users/ctorng/work/cc/ee272-hw4/src/Conv.cpp (CIN-69)
-# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
-flow package option set /SCVerify/USE_MSIM false
-false
-flow package require /NCSim
-false
-flow package option set /SCVerify/USE_NCSIM true
-true
-flow package option set /SCVerify/USE_VCS false
-true
-set clocks "clk \"-CLOCK_PERIOD $clk_period -CLOCK_EDGE rising -CLOCK_HIGH_TIME [expr $clk_period/2] -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND async -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high\" "
-5.0
-go new
-clk "-CLOCK_PERIOD 5.0 -CLOCK_EDGE rising -CLOCK_HIGH_TIME 2.5 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND async -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high" 
-solution options set Flows/NCSim/NC_ROOT /cad/cadence/INCISIVE15.20.022/
-8.2
-set clk_period 5.0
-/cad/cadence/INCISIVE15.20.022/
-# Error: Compilation aborted (CIN-5)
 solution design add Fifo<IDTYPE, 3> -type block -unlocked (HC-1)
 solution design add Fifo<IDTYPE, 4> -type block -unlocked (HC-1)
 solution design add Fifo<IDTYPE, 1> -type block -unlocked (HC-1)
 solution design add Fifo<IDTYPE, 2> -type block -unlocked (HC-1)
 solution design add Fifo<IDTYPE, 7> -type block -unlocked (HC-1)
 solution design add Fifo<IDTYPE, 8> -type block -unlocked (HC-1)
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
 solution design add Fifo<IDTYPE, 5> -type block -unlocked (HC-1)
 solution design add Fifo<IDTYPE, 6> -type block -unlocked (HC-1)
 solution design add InputDoubleBufferWriter<4096, 16, 16> -type block -unlocked (HC-1)
+flow package option set /SCVerify/USE_MSIM false
 solution design add InputDoubleBufferReader<4096, 16, 16> -type block -unlocked (HC-1)
-solution design add Conv -type top -unlocked (HC-1)
-solution design add ParamsDeserializer -type block -unlocked (HC-1)
-solution design add WeightDoubleBufferReader<4096, 16, 16> -type block -unlocked (HC-1)
-solution design add WeightDoubleBuffer<4096, 16, 16> -type block -unlocked (HC-1)
-solution design add InputDoubleBuffer<4096, 16, 16> -type block -unlocked (HC-1)
-solution design add WeightDoubleBufferWriter<4096, 16, 16> -type block -unlocked (HC-1)
-solution design add Fifo<ODTYPE, 3> -type block -unlocked (HC-1)
-solution design add Fifo<ODTYPE, 4> -type block -unlocked (HC-1)
-solution design add Fifo<ODTYPE, 1> -type block -unlocked (HC-1)
-solution design add Fifo<ODTYPE, 2> -type block -unlocked (HC-1)
-options set Input/TargetPlatform x86_64
-solution design add Fifo<ODTYPE, 7> -type block -unlocked (HC-1)
-Moving session transcript to file "/home/users/ctorng/work/cc/ee272-hw4/catapult.log"
-solution design add Fifo<ODTYPE, 8> -type block -unlocked (HC-1)
-options set Input/SearchPath ./src
-solution design add Fifo<ODTYPE, 5> -type block -unlocked (HC-1)
-x86_64
-solution design add Fifo<ODTYPE, 6> -type block -unlocked (HC-1)
-solution design add Fifo<IDTYPE, 11> -type block -unlocked (HC-1)
-solution design add Fifo<IDTYPE, 12> -type block -unlocked (HC-1)
-solution design add Fifo<IDTYPE, 9> -type block -unlocked (HC-1)
-solution design add Fifo<IDTYPE, 10> -type block -unlocked (HC-1)
-flow package require /SCVerify
-solution design add Fifo<IDTYPE, 15> -type block -unlocked (HC-1)
-4096
-solution design add Fifo<IDTYPE, 16> -type block -unlocked (HC-1)
-flow package option set /SCVerify/USE_CCS_BLOCK true
-solution design add Fifo<IDTYPE, 13> -type block -unlocked (HC-1)
-10.4
-solution design add Fifo<IDTYPE, 14> -type block -unlocked (HC-1)
-options set Output/OutputVHDL false
-solution design add SystolicArrayWrapper<IDTYPE, WDTYPE, ODTYPE, 16, 16> -type block -unlocked (HC-1)
-./src
-solution design add Serializer<PackedInt<16UL, 16UL>, ODTYPE, 16> -type block -unlocked (HC-1)
-options set Architectural/DefaultRegisterThreshold 4096
-solution design add SystolicArrayCore<IDTYPE, WDTYPE, ODTYPE, 16, 16> -type block -unlocked (HC-1)
 false
+solution design add Conv -type top -unlocked (HC-1)
+flow package require /NCSim
+solution design add ParamsDeserializer -type block -unlocked (HC-1)
+false
+solution design add WeightDoubleBufferReader<4096, 16, 16> -type block -unlocked (HC-1)
+flow package option set /SCVerify/USE_NCSIM true
+solution design add WeightDoubleBuffer<4096, 16, 16> -type block -unlocked (HC-1)
+true
+solution design add InputDoubleBuffer<4096, 16, 16> -type block -unlocked (HC-1)
+flow package option set /SCVerify/USE_VCS false
+solution design add WeightDoubleBufferWriter<4096, 16, 16> -type block -unlocked (HC-1)
+true
+solution design add Fifo<ODTYPE, 3> -type block -unlocked (HC-1)
+set clocks "clk \"-CLOCK_PERIOD $clk_period -CLOCK_EDGE rising -CLOCK_HIGH_TIME [expr $clk_period/2] -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND async -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high\" "
+solution design add Fifo<ODTYPE, 4> -type block -unlocked (HC-1)
+5.0
+solution design add Fifo<ODTYPE, 1> -type block -unlocked (HC-1)
+go new
+solution design add Fifo<ODTYPE, 2> -type block -unlocked (HC-1)
+clk "-CLOCK_PERIOD 5.0 -CLOCK_EDGE rising -CLOCK_HIGH_TIME 2.5 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND async -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high" 
+solution design add Fifo<ODTYPE, 7> -type block -unlocked (HC-1)
+solution options set Flows/NCSim/NC_ROOT /cad/cadence/INCISIVE15.20.022/
+solution design add Fifo<ODTYPE, 8> -type block -unlocked (HC-1)
+8.2
+solution design add Fifo<ODTYPE, 5> -type block -unlocked (HC-1)
+set clk_period 5.0
+solution design add Fifo<ODTYPE, 6> -type block -unlocked (HC-1)
+/cad/cadence/INCISIVE15.20.022/
+solution design add Fifo<IDTYPE, 11> -type block -unlocked (HC-1)
+options set Input/TargetPlatform x86_64
+solution design add Fifo<IDTYPE, 12> -type block -unlocked (HC-1)
+Moving session transcript to file "/home/users/ctorng/work/cc/ee272-hw4/catapult.log"
+solution design add Fifo<IDTYPE, 9> -type block -unlocked (HC-1)
+options set Input/SearchPath ./src
+solution design add Fifo<IDTYPE, 10> -type block -unlocked (HC-1)
+x86_64
+solution design add Fifo<IDTYPE, 15> -type block -unlocked (HC-1)
+solution design add Fifo<IDTYPE, 16> -type block -unlocked (HC-1)
+solution design add Fifo<IDTYPE, 13> -type block -unlocked (HC-1)
+solution design add Fifo<IDTYPE, 14> -type block -unlocked (HC-1)
+solution design add SystolicArrayWrapper<IDTYPE, WDTYPE, ODTYPE, 16, 16> -type block -unlocked (HC-1)
+flow package require /SCVerify
+solution design add Serializer<PackedInt<16UL, 16UL>, ODTYPE, 16> -type block -unlocked (HC-1)
+4096
+solution design add SystolicArrayCore<IDTYPE, WDTYPE, ODTYPE, 16, 16> -type block -unlocked (HC-1)
+flow package option set /SCVerify/USE_CCS_BLOCK true
 solution design add SystolicArrayLooper -type block -unlocked (HC-1)
+10.4
+options set Output/OutputVHDL false
 # Error:             instantiation of "void SystolicArrayWrapper<IDTYPE, WDTYPE, ODTYPE, OC0, IC0>::run(ac_channel<PackedInt<8UL, IC0>> &, ac_channel<PackedInt<8UL, OC0>> &, ac_channel<PackedInt<16UL, OC0>> &, ac_channel<Params> &) [with IDTYPE=IDTYPE, WDTYPE=WDTYPE, ODTYPE=ODTYPE, OC0=16, IC0=16]" at line 47 of "/home/users/ctorng/work/cc/ee272-hw4/src/Conv.cpp" (CRD-20)
+./src
 Pragma 'hls_design<top>' detected on class 'Conv' (CIN-6)
+options set Architectural/DefaultRegisterThreshold 4096
+false
 solution design add Fifo<ODTYPE, 11> -type block -unlocked (HC-1)
 solution design add Fifo<ODTYPE, 12> -type block -unlocked (HC-1)
 solution design add Fifo<ODTYPE, 9> -type block -unlocked (HC-1)
@@ -89,4 +82,11 @@ solution design add Fifo<ODTYPE, 15> -type block -unlocked (HC-1)
 solution design add Fifo<ODTYPE, 16> -type block -unlocked (HC-1)
 solution design add Fifo<ODTYPE, 13> -type block -unlocked (HC-1)
 solution design add Fifo<ODTYPE, 14> -type block -unlocked (HC-1)
+# Error: identifier "psum_reg" is undefined (CRD-20)
+Edison Design Group C++/C Front End - Version 5.0 (CIN-1)
+# Error:             instantiation of "void SystolicArrayCore<IDTYPE, WDTYPE, ODTYPE, OC0, IC0>::run(ac_channel<PackedInt<8UL, IC0>> &, ac_channel<PackedInt<8UL, OC0>> &, ac_channel<PackedInt<16UL, OC0>> &, ac_channel<Params> &, ac_channel<LoopIndices> &) [with IDTYPE=IDTYPE, WDTYPE=WDTYPE, ODTYPE=ODTYPE, OC0=16, IC0=16]" at line 48 of "/home/users/ctorng/work/cc/ee272-hw4/src/SystolicArray.h" (CRD-20)
+# Error:           detected during: (CRD-20)
+Front End called with arguments: -I./src -- /home/users/ctorng/work/cc/ee272-hw4/src/Conv.cpp (CIN-69)
+# Error: Compilation aborted (CIN-5)
 /INPUTFILES/2
+solution file add ./src/ConvTb.cpp -exclude true

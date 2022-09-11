@@ -2,6 +2,8 @@
 // Author: Cheryl (Yingqiu) Cao
 // Updated on 2022-09-06
 //    - added code for writer();
+// Updated on 2022-09-10
+//    - added code for reader();
 
 #ifndef INPUT_DOUBLE_BUFFER_H
 #define INPUT_DOUBLE_BUFFER_H
@@ -31,19 +33,16 @@ public:
 
         // determine the ifmap block_size for each bank
         //  == IC1 * IX0 * IY0
-        #ifndef __SYNTHESIS__
         // each ifmap block saves IC1*IY0*IX0 date entries
         ac_int<ac::log2_ceil<size>::val, false> block_size = params.IC1 * IX0 * IY0;
         // The memory size must be big enough for 1 block to fit
-        assert(block_size <= size);
-        #endif
 
         // calculate the total # of ifmap banks to be written
         uint_32 ifmap_write_bank_num = params.OY1 * params.OX1;
 
 
         while(ifmap_write_bank_num > 0) {  // there are still ifmap banks to be written
-        
+
           uint_16 page_idx = 0;
           // The double buffer mem may hold more than one ifmap bank at
           // the same time.
@@ -51,7 +50,7 @@ public:
           // For example, if the mem can hold 2 ifmap banks, page_idx in
           // range of [0,1].
 
-          // one buffer for the output ac_channel
+          // one buffer for the output ac_channel          chanStruct<PackedInt<INPUT_PRECISION,IC0>,size> current_buffer;
           chanStruct<PackedInt<INPUT_PRECISION,IC0>,size> current_buffer;
 
           while((ifmap_write_bank_num > 0) && ((page_idx + 1) * block_size <= size)) {
@@ -69,7 +68,7 @@ public:
               // chaining the input data (deserialize)
               #pragma hls_pipeline_init_interval 1
               for(int j = 0; j < IC0; j++) {
-                chained_data.value[j] = din.read(); 
+                chained_data.value[j] = din.read();
               }
 
               current_buffer.data[page_idx * block_size + i] = chained_data;
@@ -103,6 +102,68 @@ public:
         // -------------------------------
         // Your code starts here
         // -------------------------------
+
+        // load input parameters
+        Params params = paramsIn.read();
+
+        // derive the remaining cnn parameters
+        uint_16 IX0 = params.STRIDE*(params.OX0-1) + params.FX;
+        uint_16 IY0 = params.STRIDE*(params.OY0-1) + params.FY;
+
+        // determine the ifmap block_size for each bank
+        //  == IC1 * IX0 * IY0
+        // each ifmap block saves IC1*IY0*IX0 date entries
+        ac_int<ac::log2_ceil<size>::val, false> block_size = params.IC1 * IX0 * IY0;
+        // The memory size must be big enough for 1 block to fit
+
+        // calculate the total # of ifmap banks to be written
+        uint_32 ifmap_read_bank_num = params.OY1 * params.OX1;
+
+
+        while(ifmap_read_bank_num > 0){ // still ifmap banks to be read by the MAC array
+
+          uint_16 page_idx = 0;
+          // The double buffer mem may hold more than one ifmap bank at
+          // the same time.
+          // Each page corresponds to one ifmap bank (IC1 * IY0 * IX0).
+          // For example, if the mem can hold 2 ifmap banks, page_idx in
+          // range of [0,1].
+
+          chanStruct<PackedInt<INPUT_PRECISION,IC0>,size> current_buffer;
+          // read one block from the double buffer (may contain multiple
+          // read banks)
+          current_buffer = din.read();
+
+          while((ifmap_read_bank_num > 0) && ((page_idx + 1) * block_size <= size)) {
+ 
+          // output one bank of ifmap data
+          #pragma hls_pipeline_init_interval 1
+          for(int oc1 = 0; oc1 < params.OC1; oc1++)
+            for (int ic1 = 0; ic1 < params.IC1; ic1++)
+              for (int fy = 0; fy < params.FY; fy++)
+                for (int fx = 0; fx < params.FX; fx++)
+                  for (int oy0 = 0; oy0 < params.OY0; oy0++)
+                    for (int ox0 = 0; ox0 < params.OX0; ox0++){
+
+                   // determine ix0 and iy0 index
+                  uint_32 ix0 = ox0 * params.STRIDE + fx;
+                  uint_32 iy0 = oy0 * params.STRIDE + fy;
+
+                  // determine the flattened ifmap index
+                  ac_int<ac::log2_ceil<size>::val, false> idx = ic1 * IY0 * IX0 + iy0 * IX0 + ix0;
+
+                  // read from the double buffer
+                  // sends one output data
+                  PackedInt<INPUT_PRECISION, IC0> output_data = current_buffer.data[page_idx * block_size + idx];
+                  dout.write(output_data);
+                    }
+
+            // completes reading  one bank/page
+            page_idx++;
+            ifmap_read_bank_num--;
+          } 
+        }
+
 
         // -------------------------------
         // Your code ends here
@@ -139,7 +200,7 @@ public:
 
         inputDoubleBufferReaderParams.write(params);
         inputDoubleBufferWriterParams.write(params);
-        
+
         // "mem" is the double buffer shared between the reader and the
         // writer.
         inputDoubleBufferWriter.run(inputDoubleBufferWriterParams, inputs_in, mem);

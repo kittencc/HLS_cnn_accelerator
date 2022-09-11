@@ -14,9 +14,9 @@
 //                       CDS_OASYS v19.1_2.4, CDS_PSR v19.1_1.16, 
 //                       DesignPad v2.78_1.0
 //  
-//  Start time Sat Sep 10 21:42:18 2022
+//  Start time Sat Sep 10 23:14:23 2022
 # -------------------------------------------------
-# Logging session transcript to file "/tmp/log11669702cbea5.0"
+# Logging session transcript to file "/tmp/log203507c2cdc4e.0"
 dofile ./scripts/run_c_test.tcl
 # > if {[file isdirectory test]} { 
 # >     project load test
@@ -110,7 +110,7 @@ dofile ./scripts/run_c_test.tcl
 # solution design add ParamsDeserializer -type block -unlocked (HC-1)
 # solution design add Conv -type top -unlocked (HC-1)
 # Error: Compilation aborted (CIN-5)
-# Info: Completed transformation 'new' on solution 'solution.v1': elapsed time 4.35 seconds, memory usage 1039736kB, peak memory usage 1039736kB (SOL-9)
+# Info: Completed transformation 'new' on solution 'solution.v1': elapsed time 4.47 seconds, memory usage 1039736kB, peak memory usage 1039736kB (SOL-9)
 # > end dofile ./scripts/run_c_test.tcl
 # Error: go analyze: Failed analyze
-// Finish time Sat Sep 10 21:42:35 2022, time elapsed 0:17, peak memory 1015.37MB, exit status 2
+// Finish time Sat Sep 10 23:14:40 2022, time elapsed 0:17, peak memory 1015.37MB, exit status 2

@@ -60,7 +60,7 @@ public:
             // space in the mem.
 
             // write one bank
-            for(int i = 0; i < block_size; i++) {
+            for(ac_int<ac::log2_ceil<size>::val, false> i = 0; i < block_size; i++) {
 
                // variable to hold the input data
               PackedInt<INPUT_PRECISION,IC0> chained_data;
@@ -138,12 +138,12 @@ public:
  
           // output one bank of ifmap data
           #pragma hls_pipeline_init_interval 1
-          for(int oc1 = 0; oc1 < params.OC1; oc1++)
-            for (int ic1 = 0; ic1 < params.IC1; ic1++)
-              for (int fy = 0; fy < params.FY; fy++)
-                for (int fx = 0; fx < params.FX; fx++)
-                  for (int oy0 = 0; oy0 < params.OY0; oy0++)
-                    for (int ox0 = 0; ox0 < params.OX0; ox0++){
+          for(uint_16 oc1 = 0; oc1 < params.OC1; oc1++)
+            for (uint_16 ic1 = 0; ic1 < params.IC1; ic1++)
+              for (uint_16 fy = 0; fy < params.FY; fy++)
+                for (uint_16 fx = 0; fx < params.FX; fx++)
+                  for (uint_16 oy0 = 0; oy0 < params.OY0; oy0++)
+                    for (uint_16 ox0 = 0; ox0 < params.OX0; ox0++){
 
                    // determine ix0 and iy0 index
                   uint_32 ix0 = ox0 * params.STRIDE + fx;

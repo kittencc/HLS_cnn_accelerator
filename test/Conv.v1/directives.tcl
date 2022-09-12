@@ -72,5 +72,8 @@ directive set -PIPELINE_RAMP_UP true
 go new
 directive set -REGISTER_THRESHOLD 4096
 go analyze
-directive set -DESIGN_HIERARCHY {Conv {Serializer<PackedInt<16UL, 16UL>, ODTYPE, 16>} {SystolicArrayWrapper<IDTYPE, WDTYPE, ODTYPE, 16, 16>} SystolicArrayLooper {SystolicArrayCore<IDTYPE, WDTYPE, ODTYPE, 16, 16>} {Fifo<ODTYPE, 16>} {Fifo<ODTYPE, 15>} {Fifo<ODTYPE, 14>} {Fifo<ODTYPE, 13>} {Fifo<ODTYPE, 12>} {Fifo<ODTYPE, 11>} {Fifo<ODTYPE, 10>} {Fifo<ODTYPE, 9>} {Fifo<ODTYPE, 8>} {Fifo<ODTYPE, 7>} {Fifo<ODTYPE, 6>} {Fifo<ODTYPE, 5>} {Fifo<ODTYPE, 4>} {Fifo<ODTYPE, 3>} {Fifo<ODTYPE, 2>} {Fifo<ODTYPE, 1>} {Fifo<IDTYPE, 16>} {Fifo<IDTYPE, 15>} {Fifo<IDTYPE, 14>} {Fifo<IDTYPE, 13>} {Fifo<IDTYPE, 12>} {Fifo<IDTYPE, 11>} {Fifo<IDTYPE, 10>} {Fifo<IDTYPE, 9>} {Fifo<IDTYPE, 8>} {Fifo<IDTYPE, 7>} {Fifo<IDTYPE, 6>} {Fifo<IDTYPE, 5>} {Fifo<IDTYPE, 4>} {Fifo<IDTYPE, 3>} {Fifo<IDTYPE, 2>} {Fifo<IDTYPE, 1>} {WeightDoubleBuffer<4096, 16, 16>} {WeightDoubleBufferReader<4096, 16, 16>} {WeightDoubleBufferWriter<4096, 16, 16>} {InputDoubleBuffer<4096, 16, 16>} {InputDoubleBufferReader<4096, 16, 16>} {InputDoubleBufferWriter<4096, 16, 16>} ParamsDeserializer}
-go analyze
+directive set -DESIGN_HIERARCHY { 
+    {Conv}
+}
+go compile
+go compile

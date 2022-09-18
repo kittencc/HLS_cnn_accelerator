@@ -166,8 +166,8 @@ public:
         Params params = paramsIn.read();
 
         #ifndef __SYNTHESIS__
-            ac_int<ac::log2_ceil<size>::val, false> block_size = IC0 * params.FX * params.FY;
-            assert(block_size <= size);
+          //  ac_int<ac::log2_ceil<size>::val, false> block_size = IC0 * params.FX * params.FY;
+          //  assert(block_size <= size);
         #endif
 
         weightDoubleBufferReaderParams.write(params);

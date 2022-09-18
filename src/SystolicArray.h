@@ -35,7 +35,7 @@ void run(ac_channel<Params> &paramsIn,
             #pragma hls_unroll no
             LABEL(FY) for (uint_16 fy = 0; fy < params.FY; fy++){
               #pragma hls_unroll no
-              LABEL(FX) for (uint_16 fx = 0; fy < params.FX; fx++){
+              LABEL(FX) for (uint_16 fx = 0; fx < params.FX; fx++){
 
                 paramsOut.write(params);
 

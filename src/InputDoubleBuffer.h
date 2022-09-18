@@ -193,9 +193,9 @@ public:
 
         #ifndef __SYNTHESIS__
         // each ifmap block saves IC1*IY0*IX0 date entries
-        ac_int<ac::log2_ceil<size>::val, false> block_size = params.IC1 * IX0 * IY0;
+        // ac_int<ac::log2_ceil<size>::val, false> block_size = params.IC1 * IX0 * IY0;
         // The memory size must be big enough for 1 block to fit
-        assert(block_size <= size);
+        // assert(block_size <= size);
         #endif
 
         inputDoubleBufferReaderParams.write(params);

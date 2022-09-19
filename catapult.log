@@ -14,11 +14,13 @@
 //                       CDS_OASYS v19.1_2.4, CDS_PSR v19.1_1.16, 
 //                       DesignPad v2.78_1.0
 //  
-//  Start time Sun Sep 18 20:13:30 2022
+//  Start time Sun Sep 18 20:54:27 2022
 # -------------------------------------------------
-# Logging session transcript to file "/tmp/log24881502b2c81.0"
+# Logging session transcript to file "/tmp/log7193402b51a9.0"
 # Moving session transcript to file "/home/users/ctorng/work/cc/ee272-hw4/catapult.log"
 # Warning: No Encrypted Liberty technology libraries have been specified (LIB-192)
 # Warning: No Process Technology File (PTF) technology libraries have been specified (LIB-192)
 # Warning: No Synopsys DB technology libraries have been specified (LIB-192)
-flow run /Schematic/view ./schematic.nlv -state rtl
+quit
+# Saving project file '/home/users/ctorng/work/cc/ee272-hw4/build.ccs'. (PRJ-5)
+// Finish time Sun Sep 18 20:59:12 2022, time elapsed 4:45, peak memory 1.18GB, exit status 0

@@ -7,7 +7,7 @@ set blockname [file rootname [file tail [info script] ]]
 source scripts/common.tcl
 
 directive set -DESIGN_HIERARCHY {
-    {InputDoubleBuffer<16384,4,4>}
+    {InputDoubleBuffer<16384, 4, 4>}
 }
     # remember to change these parameter values to match the actual size
     # of the MAC array

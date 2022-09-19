@@ -3,6 +3,9 @@ CATAPULT = /cad/mentor/2019.11/Catapult_Synthesis_10.4b-841621/Mgc_home/bin/cata
 build/Conv.v1/rtl.v: build/InputDoubleBuffer*.v1/rtl.v build/WeightDoubleBuffer*.v1/rtl.v build/SystolicArrayCore*.v1/rtl.v src/SystolicArray.h
 	$(CATAPULT) -shell -file scripts/Conv.tcl
 
+# -shell -file opion starts Catapult in shell mode and runs the specified
+#  tcl script.
+
 build/SystolicArrayCore*.v1/rtl.v: build/ProcessingElement*.v1/rtl.v src/SystolicArrayCore.h
 	$(CATAPULT) -shell -file scripts/SystolicArrayCore.tcl
 

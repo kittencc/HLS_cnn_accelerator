@@ -7,7 +7,7 @@ set blockname [file rootname [file tail [info script] ]]
 source scripts/common.tcl
 
 directive set -DESIGN_HIERARCHY {
-    {WeightDoubleBuffer<16384, 4, 4>}
+    {WeightDoubleBuffer<4096, 16, 16>}
 }
     # remember to change these parameter values to match the actual size
     # of the MAC array
@@ -32,17 +32,17 @@ go assembly
 # when changing the word width for the double buffer, it automatically
 # changes the word with for din and dout of reader/writer() that uses the
 # mem.
-directive set /WeightDoubleBuffer<16384,4,4>/WeightDoubleBufferReader<16384,4,4>/din -WORD_WIDTH 128
-directive set /WeightDoubleBuffer<16384,4,4>/WeightDoubleBufferWriter<16384,4,4>/dout -WORD_WIDTH 128
-directive set /WeightDoubleBuffer<16384,4,4>/mem -WORD_WIDTH 128
+directive set /WeightDoubleBuffer<4096,16,16>/WeightDoubleBufferReader<4096,16,16>/din -WORD_WIDTH 128
+directive set /WeightDoubleBuffer<4096,16,16>/WeightDoubleBufferWriter<4096,16,16>/dout -WORD_WIDTH 128
+directive set /WeightDoubleBuffer<4096,16,16>/mem -WORD_WIDTH 128
 
-directive set /WeightDoubleBuffer<16384,4,4>/mem:cns -STAGE_REPLICATION 2 
+directive set /WeightDoubleBuffer<4096,16,16>/mem:cns -STAGE_REPLICATION 2 
 
 #current buffer for the reader()
-directive set /WeightDoubleBuffer<16384,4,4>/WeightDoubleBufferReader<16384,4,4>/run/while:current_buffer.data.value -WORD_WIDTH 128
+directive set /WeightDoubleBuffer<4096,16,16>/WeightDoubleBufferReader<4096,16,16>/run/while:current_buffer.data.value -WORD_WIDTH 128
 
 #current buffer for the writer()
-directive set /WeightDoubleBuffer<16384,4,4>/WeightDoubleBufferWriter<16384,4,4>/run/while:current_buffer.data.value -WORD_WIDTH 128
+directive set /WeightDoubleBuffer<4096,16,16>/WeightDoubleBufferWriter<4096,16,16>/run/while:current_buffer.data.value -WORD_WIDTH 128
 
 #return -code error "Remove this once implemented."
 # -------------------------------

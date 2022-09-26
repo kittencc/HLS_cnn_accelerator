@@ -36,7 +36,7 @@ struct Params {
    uint_16 STRIDE;
 };
 
-#define ARRAY_DIMENSION 4
+#define ARRAY_DIMENSION 16
 #define REPEAT(x) BOOST_PP_REPEAT(ARRAY_DIMENSION, x, 0)
 
 #define INPUT_PRECISION 8
@@ -48,9 +48,9 @@ struct Params {
 #define ACCUMULATION_BUFFER_SIZE 256
 
 //  data types for ifmap, weight and ofmap
-typedef ac_int<INPUT_PRECISION,true> IDTYPE; 
-typedef ac_int<WEIGHT_PRECISION,true> WDTYPE; 
-typedef ac_int<OUTPUT_PRECISION,true> ODTYPE; 
+typedef ac_int<INPUT_PRECISION,true> IDTYPE;
+typedef ac_int<WEIGHT_PRECISION,true> WDTYPE;
+typedef ac_int<OUTPUT_PRECISION,true> ODTYPE;
 
 
 #endif

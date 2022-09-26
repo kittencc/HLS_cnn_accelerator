@@ -7,7 +7,7 @@ set blockname [file rootname [file tail [info script] ]]
 source scripts/common.tcl
 
 directive set -DESIGN_HIERARCHY {
-    {InputDoubleBuffer<16384, 4, 4>}
+    {InputDoubleBuffer<4096, 16, 16>}
 }
     # remember to change these parameter values to match the actual size
     # of the MAC array
@@ -31,16 +31,16 @@ go assembly
 # when changing the word width for the double buffer, it automatically
 # changes the word with for din and dout of reader/writer() that uses the
 # mem.
-directive set /InputDoubleBuffer<16384,4,4>/InputDoubleBufferReader<16384,4,4>/din -WORD_WIDTH 128
-directive set /InputDoubleBuffer<16384,4,4>/InputDoubleBufferWriter<16384,4,4>/dout -WORD_WIDTH 128
-directive set /InputDoubleBuffer<16384,4,4>/mem -WORD_WIDTH 128
+directive set /InputDoubleBuffer<4096,16,16>/InputDoubleBufferReader<4096,16,16>/din -WORD_WIDTH 128
+directive set /InputDoubleBuffer<4096,16,16>/InputDoubleBufferWriter<4096,16,16>/dout -WORD_WIDTH 128
+directive set /InputDoubleBuffer<4096,16,16>/mem -WORD_WIDTH 128
 # stage replication 2 for the double buffer (tool should set it even it
 # you don't specify it here)
-directive set /InputDoubleBuffer<16384,4,4>/mem:cns -STAGE_REPLICATION 2
+directive set /InputDoubleBuffer<4096,16,16>/mem:cns -STAGE_REPLICATION 2
 
 
 #for the current_buffer in reader():
-directive set /InputDoubleBuffer<16384,4,4>/InputDoubleBufferReader<16384,4,4>/run/while:current_buffer.data.value -WORD_WIDTH 128
+directive set /InputDoubleBuffer<4096,16,16>/InputDoubleBufferReader<4096,16,16>/run/while:current_buffer.data.value -WORD_WIDTH 128
 # reader gets one chained_data from the internal mem each cycle
 # (init_interval 1).
 # This requires the mem to have a word width = precision * IC0 = 8 * 16 =
@@ -49,7 +49,7 @@ directive set /InputDoubleBuffer<16384,4,4>/InputDoubleBufferReader<16384,4,4>/r
 # which violates the requirement for init_interval.
 
 # for the current_buffer in writer():
-directive set /InputDoubleBuffer<16384,4,4>/InputDoubleBufferWriter<16384,4,4>/run/while:current_buffer.data.value -WORD_WIDTH 128
+directive set /InputDoubleBuffer<4096,16,16>/InputDoubleBufferWriter<4096,16,16>/run/while:current_buffer.data.value -WORD_WIDTH 128
 
 return -code error "Remove this once implemented."
 # Your code ends here

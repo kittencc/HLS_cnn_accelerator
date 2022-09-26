@@ -5,7 +5,7 @@
 //             CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
 //                 PROPERTY OF MENTOR GRAPHICS OR ITS LICENSORS
 //  
-//  Running on Linux ctorng@caddy01 3.10.0-1160.66.1.el7.x86_64 x86_64 aol
+//  Running on Linux ctorng@caddy01 3.10.0-1160.76.1.el7.x86_64 x86_64 aol
 //  
 //  Package information: SIFLIBS v23.4_2.0, HLS_PKGS v23.4_2.0, 
 //                       SIF_TOOLKITS v23.4_2.0, SIF_XILINX v23.4_2.0, 
@@ -14,13 +14,190 @@
 //                       CDS_OASYS v19.1_2.4, CDS_PSR v19.1_1.16, 
 //                       DesignPad v2.78_1.0
 //  
-//  Start time Sun Sep 18 20:54:27 2022
+//  Start time Sun Sep 25 20:20:25 2022
 # -------------------------------------------------
-# Logging session transcript to file "/tmp/log7193402b51a9.0"
+# Logging session transcript to file "/tmp/log12559c42c23ef.0"
+dofile ./scripts/ProcessingElement.tcl
+# > set blockname [file rootname [file tail [info script] ]]
+# ProcessingElement
+# > source scripts/common.tcl
 # Moving session transcript to file "/home/users/ctorng/work/cc/ee272-hw4/catapult.log"
+# Info: Branching solution 'solution.v2' at state 'new' (PRJ-2)
+# Info: Starting transformation 'analyze' on solution 'solution.v2' (SOL-8)
+# Front End called with arguments: -I./src -- /home/users/ctorng/work/cc/ee272-hw4/src/Conv.cpp (CIN-69)
+# Edison Design Group C++/C Front End - Version 5.0 (CIN-1)
+# $PROJECT_HOME/src/Conv.cpp(28): Pragma 'hls_design<top>' detected on class 'Conv' (CIN-6)
+# solution design add Serializer<PackedInt<16UL, 4UL>, ODTYPE, 4> -type block -unlocked (HC-1)
+# solution design add SystolicArrayWrapper<IDTYPE, WDTYPE, ODTYPE, 4, 4> -type block -unlocked (HC-1)
+# solution design add SystolicArrayLooper -type block -unlocked (HC-1)
+# solution design add SystolicArrayCore<IDTYPE, WDTYPE, ODTYPE, 4, 4> -type block -unlocked (HC-1)
+# solution design add Fifo<ODTYPE, 4> -type block -unlocked (HC-1)
+# solution design add Fifo<ODTYPE, 3> -type block -unlocked (HC-1)
+# solution design add Fifo<ODTYPE, 2> -type block -unlocked (HC-1)
+# solution design add Fifo<ODTYPE, 1> -type block -unlocked (HC-1)
+# solution design add Fifo<IDTYPE, 4> -type block -unlocked (HC-1)
+# solution design add Fifo<IDTYPE, 3> -type block -unlocked (HC-1)
+# solution design add Fifo<IDTYPE, 2> -type block -unlocked (HC-1)
+# solution design add Fifo<IDTYPE, 1> -type block -unlocked (HC-1)
+# solution design add ProcessingElement<IDTYPE, WDTYPE, ODTYPE> -type block -unlocked (HC-1)
+# solution design add WeightDoubleBuffer<16384, 4, 4> -type block -unlocked (HC-1)
+# solution design add WeightDoubleBufferReader<16384, 4, 4> -type block -unlocked (HC-1)
+# solution design add WeightDoubleBufferWriter<16384, 4, 4> -type block -unlocked (HC-1)
+# solution design add InputDoubleBuffer<16384, 4, 4> -type block -unlocked (HC-1)
+# solution design add InputDoubleBufferReader<16384, 4, 4> -type block -unlocked (HC-1)
+# solution design add InputDoubleBufferWriter<16384, 4, 4> -type block -unlocked (HC-1)
+# solution design add ParamsDeserializer -type block -unlocked (HC-1)
+# solution design add Conv -type top -unlocked (HC-1)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v2': elapsed time 4.39 seconds, memory usage 1039736kB, peak memory usage 1039736kB (SOL-9)
+# > directive set -DESIGN_HIERARCHY {
+# >     {ProcessingElement<IDTYPE, WDTYPE, ODTYPE>}
+# > }
+# solution design add ProcessingElement<IDTYPE, WDTYPE, ODTYPE> -type top -unlocked (HC-1)
+# /DESIGN_HIERARCHY {
+#     {ProcessingElement<IDTYPE, WDTYPE, ODTYPE>}
+# }
+# > go compile
+# Info: Starting transformation 'compile' on solution 'solution.v2' (SOL-8)
+# Generating synthesis internal form... (CIN-3)
+# $PROJECT_HOME/src/ProcessingElement.h(14): Found top design routine 'ProcessingElement<IDTYPE, WDTYPE, ODTYPE>' specified by directive (CIN-52)
+# $PROJECT_HOME/src/ProcessingElement.h(14): Found top design routine 'ProcessingElement<IDTYPE, WDTYPE, ODTYPE>' specified by directive (CIN-52)
+# Warning: $PROJECT_HOME/src/ProcessingElement.h(14): Multiple tops detected, changing routine 'ProcessingElement<IDTYPE, WDTYPE, ODTYPE>' to a block (CIN-63)
+# $PROJECT_HOME/src/ProcessingElement.h(14): Found top design routine 'ProcessingElement<IDTYPE, WDTYPE, ODTYPE>' specified by directive (CIN-52)
+# $PROJECT_HOME/src/ProcessingElement.h(16): Inlining member function 'ProcessingElement<IDTYPE, WDTYPE, ODTYPE>::ProcessingElement' on object '' (CIN-64)
+# $PROJECT_HOME/src/ProcessingElement.h(19): Synthesizing method 'ProcessingElement<IDTYPE, WDTYPE, ODTYPE>::run' (CIN-13)
+# $PROJECT_HOME/src/ProcessingElement.h(19): Inlining member function 'ProcessingElement<IDTYPE, WDTYPE, ODTYPE>::run' on object '' (CIN-64)
+# $PROJECT_HOME/src/ProcessingElement.h(19): Optimizing block '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>' ... (CIN-4)
+# $PROJECT_HOME/src/ProcessingElement.h(19): INOUT port 'input_in' is only used as an input. (OPT-10)
+# $PROJECT_HOME/src/ProcessingElement.h(20): INOUT port 'psum_in' is only used as an input. (OPT-10)
+# $PROJECT_HOME/src/ProcessingElement.h(21): INOUT port 'weight' is only used as an input. (OPT-10)
+# $PROJECT_HOME/src/ProcessingElement.h(22): INOUT port 'input_out' is only used as an output. (OPT-11)
+# $PROJECT_HOME/src/ProcessingElement.h(23): INOUT port 'psum_out' is only used as an output. (OPT-11)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>': (Total ops = 4, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/constructor': (Total ops = 0, Real ops = 0, Vars = 0) (SOL-10)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/constructor': (Total ops = 0, Real ops = 0, Vars = 0) (SOL-10)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>': (Total ops = 4, Real ops = 2, Vars = 5) (SOL-10)
+# Info: $PROJECT_HOME/src/ProcessingElement.h(16): Partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/constructor' is found empty and is optimized away. (OPT-12)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>': (Total ops = 4, Real ops = 2, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run': (Total ops = 4, Real ops = 2, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run': (Total ops = 4, Real ops = 2, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>': (Total ops = 4, Real ops = 2, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run': (Total ops = 4, Real ops = 2, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run': (Total ops = 3, Real ops = 2, Vars = 0) (SOL-10)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>': (Total ops = 3, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run': (Total ops = 3, Real ops = 2, Vars = 0) (SOL-10)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>': (Total ops = 3, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run': (Total ops = 3, Real ops = 2, Vars = 0) (SOL-10)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>': (Total ops = 3, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run': (Total ops = 3, Real ops = 2, Vars = 0) (SOL-10)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>': (Total ops = 3, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run': (Total ops = 3, Real ops = 2, Vars = 0) (SOL-10)
+# Design 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>' was read (SOL-1)
+# Warning: Toplevel found in header $PROJECT_HOME/src/ProcessingElement.h, using $PROJECT_HOME/src/Conv.cpp for header dependencies.
+# Info: CDesignChecker Shell script written to '/home/users/ctorng/work/cc/ee272-hw4/build/ProcessingElementless_IDTYPEcomma_WDTYPEcomma_ODTYPEgreater_.v1/CDesignChecker/design_checker.sh'
+# Info: Completed transformation 'compile' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1': elapsed time 1.44 seconds, memory usage 1105272kB, peak memory usage 1105272kB (SOL-9)
+# > source scripts/set_libraries.tcl
+# > go libraries
+# Info: Starting transformation 'libraries' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1' (SOL-8)
+# Reading component library '$MGC_HOME/pkgs/siflibs/mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+# Reading component library '$MGC_HOME/pkgs/siflibs/stdops.lib' [STDOPS]... (LIB-49)
+# Reading component library '$MGC_HOME/pkgs/siflibs/ccs_ioport.lib' [ccs_ioport]... (LIB-49)
+# Reading component library '$MGC_HOME/pkgs/siflibs/mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+# Reading component library '$MGC_HOME/pkgs/cds_assert/assert_ops.lib' [ASSERT_OPS]... (LIB-49)
+# Reading component library '$MGC_HOME/pkgs/cds_assert/assert_mods.lib' [assert_mods]... (LIB-49)
+# Reading component library '$MGC_HOME/pkgs/siflibs/nangate/nangate-45nm_beh.lib' [nangate-45nm_beh]... (LIB-49)
+# Reading component library '$MGC_HOME/pkgs/siflibs/ccs_sample_mem.lib' [ccs_sample_mem]... (LIB-49)
 # Warning: No Encrypted Liberty technology libraries have been specified (LIB-192)
 # Warning: No Process Technology File (PTF) technology libraries have been specified (LIB-192)
 # Warning: No Synopsys DB technology libraries have been specified (LIB-192)
-quit
-# Saving project file '/home/users/ctorng/work/cc/ee272-hw4/build.ccs'. (PRJ-5)
-// Finish time Sun Sep 18 20:59:12 2022, time elapsed 4:45, peak memory 1.18GB, exit status 0
+# Info: Completed transformation 'libraries' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1': elapsed time 0.54 seconds, memory usage 1105272kB, peak memory usage 1105272kB (SOL-9)
+# > directive set -CLOCKS $clocks
+# /CLOCKS {clk "-CLOCK_PERIOD 5.0 -CLOCK_EDGE rising -CLOCK_HIGH_TIME 2.5 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND async -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high" }
+# > go assembly
+# Info: Starting transformation 'assembly' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1' (SOL-8)
+# $PROJECT_HOME/src/ProcessingElement.h(19): Loop '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run/main' is left rolled. (LOOP-4)
+# Info: Completed transformation 'assembly' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1': elapsed time 0.04 seconds, memory usage 1105272kB, peak memory usage 1105272kB (SOL-9)
+# > directive set /ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run -DESIGN_GOAL Latency
+# /ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run/DESIGN_GOAL latency
+# > directive set /ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run -CLOCK_OVERHEAD 0.000000
+# /ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run/CLOCK_OVERHEAD 0.000000
+# > go extract
+# Info: Starting transformation 'loops' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1' (SOL-8)
+# $PROJECT_HOME/src/ProcessingElement.h(19): Loop '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run/main' is left rolled. (LOOP-4)
+# Info: Completed transformation 'loops' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1': elapsed time 0.03 seconds, memory usage 1105272kB, peak memory usage 1105272kB (SOL-9)
+# Info: Starting transformation 'memories' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1' (SOL-8)
+# $PROJECT_HOME/src/ProcessingElement.h(19): I/O-Port Resource '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/input_in:rsc' (from var: input_in) mapped to 'ccs_ioport.ccs_in' (size: 8). (MEM-2)
+# $PROJECT_HOME/src/ProcessingElement.h(20): I/O-Port Resource '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_in:rsc' (from var: psum_in) mapped to 'ccs_ioport.ccs_in' (size: 16). (MEM-2)
+# $PROJECT_HOME/src/ProcessingElement.h(21): I/O-Port Resource '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/weight:rsc' (from var: weight) mapped to 'ccs_ioport.ccs_in' (size: 8). (MEM-2)
+# $PROJECT_HOME/src/ProcessingElement.h(22): I/O-Port Resource '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/input_out:rsc' (from var: input_out) mapped to 'mgc_ioport.mgc_out_dreg' (size: 8). (MEM-2)
+# $PROJECT_HOME/src/ProcessingElement.h(23): I/O-Port Resource '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_out:rsc' (from var: psum_out) mapped to 'mgc_ioport.mgc_out_dreg' (size: 16). (MEM-2)
+# $PROJECT_HOME/src/ProcessingElement.h(19): I/O-Port Resource '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ccs_ccore_start:rsc' (from var: ccs_ccore_start) mapped to 'ccs_ioport.ccs_in' (size: 1). (MEM-2)
+# Info: Completed transformation 'memories' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1': elapsed time 0.06 seconds, memory usage 1105272kB, peak memory usage 1105272kB (SOL-9)
+# Info: Starting transformation 'cluster' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1' (SOL-8)
+# Info: Completed transformation 'cluster' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1': elapsed time 0.03 seconds, memory usage 1105272kB, peak memory usage 1105272kB (SOL-9)
+# Info: Starting transformation 'architect' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1' (SOL-8)
+# Design 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>' contains '3' real operations. (SOL-11)
+# Info: Completed transformation 'architect' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1': elapsed time 0.05 seconds, memory usage 1105272kB, peak memory usage 1105272kB (SOL-9)
+# Info: Starting transformation 'allocate' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+# User constraint applied between 'input_in:io_read(input_in:rsc.@)' and 'psum_in:io_read(psum_in:rsc.@)',  min = 0  max = 0 (CNS-4)
+# User constraint applied between 'input_in:io_read(input_in:rsc.@)' and 'weight:io_read(weight:rsc.@)',  min = 0  max = 0 (CNS-4)
+# User constraint applied between 'input_in:io_read(input_in:rsc.@)' and 'io_read(ccs_ccore_start:rsc.@)',  min = 0  max = 0 (CNS-4)
+# User constraint applied between 'psum_in:io_read(psum_in:rsc.@)' and 'weight:io_read(weight:rsc.@)',  min = 0  max = 0 (CNS-4)
+# User constraint applied between 'psum_in:io_read(psum_in:rsc.@)' and 'io_read(ccs_ccore_start:rsc.@)',  min = 0  max = 0 (CNS-4)
+# User constraint applied between 'weight:io_read(weight:rsc.@)' and 'io_read(ccs_ccore_start:rsc.@)',  min = 0  max = 0 (CNS-4)
+# $PROJECT_HOME/src/ProcessingElement.h(19): Prescheduled LOOP '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run/main' (2 c-steps) (SCHD-7)
+# $PROJECT_HOME/src/ProcessingElement.h(19): Prescheduled LOOP '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run/run:rlp' (0 c-steps) (SCHD-7)
+# $PROJECT_HOME/src/ProcessingElement.h(19): Prescheduled SEQUENTIAL '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run' (total length 2 c-steps) (SCHD-8)
+# Info: $PROJECT_HOME/src/ProcessingElement.h(19): Initial schedule of SEQUENTIAL '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run': Latency = 1, Area (Datapath, Register, Total) = 630.06, 0.00, 630.06 (CRAAS-11)
+# At least one feasible schedule exists. (CRAAS-9)
+# Info: Optimized LOOP '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run/main': Latency = 1, Area (Datapath, Register, Total) = 580.19, 0.00, 580.19 (CRAAS-10)
+# Info: Optimized LOOP '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run/main': Latency = 1, Area (Datapath, Register, Total) = 475.20, 0.00, 475.20 (CRAAS-10)
+# Info: Optimized LOOP '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run/main': Latency = 1, Area (Datapath, Register, Total) = 357.81, 0.00, 357.81 (CRAAS-10)
+# Info: $PROJECT_HOME/src/ProcessingElement.h(19): Final schedule of SEQUENTIAL '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run': Latency = 1, Area (Datapath, Register, Total) = 357.81, 0.00, 357.81 (CRAAS-12)
+# Resource allocation and scheduling done. (CRAAS-2)
+# Netlist written to file 'schedule.gnt' (NET-4)
+# Warning: Extrapolation detected. Script '/home/users/ctorng/work/cc/ee272-hw4/build/ProcessingElementless_IDTYPEcomma_WDTYPEcomma_ODTYPEgreater_.v1/adjust_char_library.tcl' generated. (LIB-142)
+# Info: Completed transformation 'allocate' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1': elapsed time 0.10 seconds, memory usage 1105272kB, peak memory usage 1105272kB (SOL-9)
+# Info: Starting transformation 'schedule' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run' (CRAAS-1)
+# Global signal 'input_in:rsc.dat' added to design 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>' for component 'input_in:rsci' (LIB-3)
+# Global signal 'psum_in:rsc.dat' added to design 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>' for component 'psum_in:rsci' (LIB-3)
+# Global signal 'weight:rsc.dat' added to design 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>' for component 'weight:rsci' (LIB-3)
+# Global signal 'input_out:rsc.z' added to design 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>' for component 'input_out:rsci' (LIB-3)
+# Global signal 'psum_out:rsc.z' added to design 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>' for component 'psum_out:rsci' (LIB-3)
+# Global signal 'ccs_ccore_start:rsc.dat' added to design 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>' for component 'ccs_ccore_start:rsci' (LIB-3)
+# Info: $PROJECT_HOME/src/ProcessingElement.h(19): Loop '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/run/main' is pipelined with initiation interval 1 and no flushing (SCHD-43)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/run': (Total ops = 18, Real ops = 3, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/run': (Total ops = 11, Real ops = 3, Vars = 3) (SOL-10)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/run': (Total ops = 11, Real ops = 3, Vars = 3) (SOL-10)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/run': (Total ops = 11, Real ops = 3, Vars = 3) (SOL-10)
+# Report written to file 'cycle.rpt'
+# Info: Completed transformation 'schedule' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1': elapsed time 0.41 seconds, memory usage 1105272kB, peak memory usage 1105272kB (SOL-9)
+# Info: Starting transformation 'dpfsm' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1' (SOL-8)
+# Performing FSM extraction... (FSM-1)
+# Info: Optimizing partition '/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/run': (Total ops = 16, Real ops = 3, Vars = 3) (SOL-10)
+# Warning: $PROJECT_HOME/src/ProcessingElement.h(19): Input port 'ccs_ccore_start:rsc.dat' is never used. (OPT-4)
+# Info: Completed transformation 'dpfsm' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1': elapsed time 0.09 seconds, memory usage 1105272kB, peak memory usage 1105272kB (SOL-9)
+# Info: Starting transformation 'instance' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1' (SOL-8)
+# Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Completed transformation 'instance' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1': elapsed time 0.11 seconds, memory usage 1105272kB, peak memory usage 1105272kB (SOL-9)
+# Info: Starting transformation 'extract' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1' (SOL-8)
+# Report written to file 'rtl.rpt'
+# Netlist written to file 'rtl.v' (NET-4)
+# generate concat
+# order file name is: rtl.v_order.txt
+# Add dependent file: /cad/mentor/2019.11/Catapult_Synthesis_10.4b-841621/Mgc_home/pkgs/siflibs/ccs_in_v1.v
+# Add dependent file: /cad/mentor/2019.11/Catapult_Synthesis_10.4b-841621/Mgc_home/pkgs/siflibs/mgc_out_dreg_v2.v
+# Add dependent file: ./rtl.v
+# Finished writing concatenated file: /home/users/ctorng/work/cc/ee272-hw4/build/ProcessingElementless_IDTYPEcomma_WDTYPEcomma_ODTYPEgreater_.v1/concat_rtl.v
+# order file name is: rtl.v_order_sim.txt
+# Add dependent file: /cad/mentor/2019.11/Catapult_Synthesis_10.4b-841621/Mgc_home/pkgs/siflibs/ccs_in_v1.v
+# Add dependent file: /cad/mentor/2019.11/Catapult_Synthesis_10.4b-841621/Mgc_home/pkgs/siflibs/mgc_out_dreg_v2.v
+# Add dependent file: ./rtl.v
+# Finished writing concatenated simulation file: /home/users/ctorng/work/cc/ee272-hw4/build/ProcessingElementless_IDTYPEcomma_WDTYPEcomma_ODTYPEgreater_.v1/concat_sim_rtl.v
+# Info: Completed transformation 'extract' on solution 'ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1': elapsed time 1.79 seconds, memory usage 1105272kB, peak memory usage 1105272kB (SOL-9)
+# > end dofile ./scripts/ProcessingElement.tcl
+// Finish time Sun Sep 25 20:20:55 2022, time elapsed 0:30, peak memory 1.05GB, exit status 0

@@ -1,0 +1,35 @@
+
+# Messages from "go new"
+
+
+# Messages from "go analyze"
+
+solution design add SystolicArrayCore<IDTYPE, WDTYPE, ODTYPE, 4, 4> -type block -unlocked (HC-1)
+Source file analysis completed (CIN-68)
+solution design add Fifo<ODTYPE, 2> -type block -unlocked (HC-1)
+solution design add Fifo<ODTYPE, 3> -type block -unlocked (HC-1)
+solution design add InputDoubleBuffer<16384, 4, 4> -type block -unlocked (HC-1)
+solution design add WeightDoubleBufferWriter<16384, 4, 4> -type block -unlocked (HC-1)
+solution design add InputDoubleBufferWriter<16384, 4, 4> -type block -unlocked (HC-1)
+solution design add InputDoubleBufferReader<16384, 4, 4> -type block -unlocked (HC-1)
+solution design add ProcessingElement<IDTYPE, WDTYPE, ODTYPE> -type block -unlocked (HC-1)
+solution design add Fifo<IDTYPE, 1> -type block -unlocked (HC-1)
+solution design add WeightDoubleBufferReader<16384, 4, 4> -type block -unlocked (HC-1)
+solution design add WeightDoubleBuffer<16384, 4, 4> -type block -unlocked (HC-1)
+solution design add Serializer<PackedInt<16UL, 4UL>, ODTYPE, 4> -type block -unlocked (HC-1)
+Pragma 'hls_design<top>' detected on class 'Conv' (CIN-6)
+solution design add SystolicArrayLooper -type block -unlocked (HC-1)
+solution design add SystolicArrayWrapper<IDTYPE, WDTYPE, ODTYPE, 4, 4> -type block -unlocked (HC-1)
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+Edison Design Group C++/C Front End - Version 5.0 (CIN-1)
+Front End called with arguments: -I./src -- /home/users/ctorng/work/cc/ee272-hw4/src/Conv.cpp (CIN-69)
+solution design add Fifo<IDTYPE, 4> -type block -unlocked (HC-1)
+Saving project file '/home/users/ctorng/work/cc/ee272-hw4/build.ccs'. (PRJ-5)
+solution design add Fifo<ODTYPE, 1> -type block -unlocked (HC-1)
+solution design add Fifo<IDTYPE, 2> -type block -unlocked (HC-1)
+Moving session transcript to file "/home/users/ctorng/work/cc/ee272-hw4/catapult.log"
+solution design add Conv -type top -unlocked (HC-1)
+solution design add Fifo<IDTYPE, 3> -type block -unlocked (HC-1)
+solution design add ParamsDeserializer -type block -unlocked (HC-1)
+solution design add Fifo<ODTYPE, 4> -type block -unlocked (HC-1)
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 3.87 seconds, memory usage 1039736kB, peak memory usage 1039736kB (SOL-9)

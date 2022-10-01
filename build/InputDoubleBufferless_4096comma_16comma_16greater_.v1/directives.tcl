@@ -20,7 +20,6 @@ solution options set /Architectural/DefaultRegisterThreshold 4096
 solution options set /Input/TargetPlatform x86_64
 solution options set /Input/SearchPath ./src
 solution options set /Output/OutputVHDL false
-solution options set /Output/GenerateCycleNetlist false
 solution options set /Flows/NCSim/NC_ROOT /cad/cadence/INCISIVE15.20.022/
 solution options set /Flows/SCVerify/USE_QUESTASIM false
 solution options set /Flows/SCVerify/USE_NCSIM true
@@ -80,4 +79,11 @@ solution library add ccs_sample_mem -file {$MGC_HOME/pkgs/siflibs/ccs_sample_mem
 go libraries
 directive set -CLOCKS {clk {-CLOCK_PERIOD 5.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -CLOCK_HIGH_TIME 2.5 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND async -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_ACTIVE high}}
 go assembly
-go assembly
+directive set /InputDoubleBuffer<4096,16,16>/InputDoubleBufferReader<4096,16,16>/din -WORD_WIDTH 128
+directive set /InputDoubleBuffer<4096,16,16>/InputDoubleBufferWriter<4096,16,16>/dout -WORD_WIDTH 128
+directive set /InputDoubleBuffer<4096,16,16>/mem -WORD_WIDTH 128
+directive set /InputDoubleBuffer<4096,16,16>/mem:cns -STAGE_REPLICATION 2
+directive set /InputDoubleBuffer<4096,16,16>/InputDoubleBufferReader<4096,16,16>/run/while:current_buffer.data.value -WORD_WIDTH 128
+directive set /InputDoubleBuffer<4096,16,16>/InputDoubleBufferWriter<4096,16,16>/run/while:current_buffer.data.value -WORD_WIDTH 128
+go architect
+go extract

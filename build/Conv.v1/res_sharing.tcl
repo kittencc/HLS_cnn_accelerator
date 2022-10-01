@@ -1,0 +1,14 @@
+directive set /Conv/SystolicArrayLooper/SystolicArrayLooper:run/SystolicArrayLooper:run:conc/ofmap_bank_num:mul#1 RESOURCE_NAME ofmap_bank_num:mul:rg
+directive set /Conv/SystolicArrayLooper/SystolicArrayLooper:run/SystolicArrayLooper:run:conc/ofmap_bank_num:mul RESOURCE_NAME ofmap_bank_num:mul:rg
+directive set /Conv/SystolicArrayLooper/SystolicArrayLooper:run/SystolicArrayLooper:run:conc/FX:acc#1 RESOURCE_NAME FX:acc#1:rg
+directive set /Conv/SystolicArrayLooper/SystolicArrayLooper:run/SystolicArrayLooper:run:conc/OY1_OX1_OC1:acc#2 RESOURCE_NAME FX:acc#1:rg
+directive set /Conv/SystolicArrayLooper/SystolicArrayLooper:run/SystolicArrayLooper:run:conc/OY1_OX1_OC1:acc#1 RESOURCE_NAME FX:acc#1:rg
+directive set /Conv/SystolicArrayLooper/SystolicArrayLooper:run/SystolicArrayLooper:run:conc/IC1:acc#2 RESOURCE_NAME FX:acc#1:rg
+directive set /Conv/SystolicArrayLooper/SystolicArrayLooper:run/SystolicArrayLooper:run:conc/IC1:acc#1 RESOURCE_NAME FX:acc#1:rg
+directive set /Conv/SystolicArrayLooper/SystolicArrayLooper:run/SystolicArrayLooper:run:conc/FY:acc#2 RESOURCE_NAME FX:acc#1:rg
+directive set /Conv/SystolicArrayLooper/SystolicArrayLooper:run/SystolicArrayLooper:run:conc/FY:acc#1 RESOURCE_NAME FX:acc#1:rg
+directive set /Conv/SystolicArrayLooper/SystolicArrayLooper:run/SystolicArrayLooper:run:conc/FX:acc#2 RESOURCE_NAME FX:acc#1:rg
+directive set /Conv/SystolicArrayLooper/SystolicArrayLooper:run/SystolicArrayLooper:run:conc/OY1_OX1_OC1:acc#3 RESOURCE_NAME FX:acc#3:rg
+directive set /Conv/SystolicArrayLooper/SystolicArrayLooper:run/SystolicArrayLooper:run:conc/IC1:acc#3 RESOURCE_NAME FX:acc#3:rg
+directive set /Conv/SystolicArrayLooper/SystolicArrayLooper:run/SystolicArrayLooper:run:conc/FY:acc#3 RESOURCE_NAME FX:acc#3:rg
+directive set /Conv/SystolicArrayLooper/SystolicArrayLooper:run/SystolicArrayLooper:run:conc/FX:acc#3 RESOURCE_NAME FX:acc#3:rg

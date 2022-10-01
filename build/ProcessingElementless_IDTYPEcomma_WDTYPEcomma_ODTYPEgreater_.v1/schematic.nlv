@@ -4,11 +4,11 @@
 #    File: Nlview netlist
 
 module new "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run" "orig" \
- -symlib {08497741-736d-480c-a045-49ad72b71692-6 __CPR154__run__127ProcessingElement__tm__101_31ac_int__tm__17_XCiL_1_8XCbL_1_131ac_int__tm__J49J32ac_int__tm__18_XCiL_2_16XCbL_1_1FRZ1ZRZ3ZRZ2ZT1T2_v v1} \
- -symlib {08497741-736d-480c-a045-49ad72b71692-6 __CPR154__run__127ProcessingElement__tm__101_31ac_int__tm__17_XCiL_1_8XCbL_1_131ac_int__tm__J49J32ac_int__tm__18_XCiL_2_16XCbL_1_1FRZ1ZRZ3ZRZ2ZT1T2_v v1} \
- -symlib {08497741-736d-480c-a045-49ad72b71692-6 __CPR154__run__127ProcessingElement__tm__101_31ac_int__tm__17_XCiL_1_8XCbL_1_131ac_int__tm__J49J32ac_int__tm__18_XCiL_2_16XCbL_1_1FRZ1ZRZ3ZRZ2ZT1T2_v v1} \
- -symlib {08497741-736d-480c-a045-49ad72b71692-7 __CPR154__run__127ProcessingElement__tm__101_31ac_int__tm__17_XCiL_1_8XCbL_1_131ac_int__tm__J49J32ac_int__tm__18_XCiL_2_16XCbL_1_1FRZ1ZRZ3ZRZ2ZT1T2_v v1} \
- -symlib {08497741-736d-480c-a045-49ad72b71692-7 __CPR154__run__127ProcessingElement__tm__101_31ac_int__tm__17_XCiL_1_8XCbL_1_131ac_int__tm__J49J32ac_int__tm__18_XCiL_2_16XCbL_1_1FRZ1ZRZ3ZRZ2ZT1T2_v v1} \
+ -symlib {c801be18-3a17-4321-99e3-8b45a2818e8f-6 __CPR154__run__127ProcessingElement__tm__101_31ac_int__tm__17_XCiL_1_8XCbL_1_131ac_int__tm__J49J32ac_int__tm__18_XCiL_2_16XCbL_1_1FRZ1ZRZ3ZRZ2ZT1T2_v v1} \
+ -symlib {c801be18-3a17-4321-99e3-8b45a2818e8f-6 __CPR154__run__127ProcessingElement__tm__101_31ac_int__tm__17_XCiL_1_8XCbL_1_131ac_int__tm__J49J32ac_int__tm__18_XCiL_2_16XCbL_1_1FRZ1ZRZ3ZRZ2ZT1T2_v v1} \
+ -symlib {c801be18-3a17-4321-99e3-8b45a2818e8f-6 __CPR154__run__127ProcessingElement__tm__101_31ac_int__tm__17_XCiL_1_8XCbL_1_131ac_int__tm__J49J32ac_int__tm__18_XCiL_2_16XCbL_1_1FRZ1ZRZ3ZRZ2ZT1T2_v v1} \
+ -symlib {c801be18-3a17-4321-99e3-8b45a2818e8f-7 __CPR154__run__127ProcessingElement__tm__101_31ac_int__tm__17_XCiL_1_8XCbL_1_131ac_int__tm__J49J32ac_int__tm__18_XCiL_2_16XCbL_1_1FRZ1ZRZ3ZRZ2ZT1T2_v v1} \
+ -symlib {c801be18-3a17-4321-99e3-8b45a2818e8f-7 __CPR154__run__127ProcessingElement__tm__101_31ac_int__tm__17_XCiL_1_8XCbL_1_131ac_int__tm__J49J32ac_int__tm__18_XCiL_2_16XCbL_1_1FRZ1ZRZ3ZRZ2ZT1T2_v v1} \
 
 load symbol left_portin noname DEF \
    port p output -loc 0 0 0 0 \
@@ -35,14 +35,14 @@ load symbol probe_out noname DEF \
    attrdsp @name -cl  25 0 12 \
    fpath 0 0 7 -7 14 0 7 7 0 0 \
    place output_port fillcolor 3
-load port {clk} input -symbol left_portin noname -attr xrf 08497741-736d-480c-a045-49ad72b71692-4 -attr oid 1 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/clk}
-load port {arst_n} input -symbol left_portin noname -attr xrf 08497741-736d-480c-a045-49ad72b71692-5 -attr oid 2 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/arst_n}
-load portBus input_in:rsc.dat(7:0) input 8 {input_in:rsc.dat(7)} {input_in:rsc.dat(6)} {input_in:rsc.dat(5)} {input_in:rsc.dat(4)} {input_in:rsc.dat(3)} {input_in:rsc.dat(2)} {input_in:rsc.dat(1)} {input_in:rsc.dat(0)} -symbol left_portin noname -attr xrf 08497741-736d-480c-a045-49ad72b71692-6 -attr oid 3 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:rsc.dat}
-load portBus psum_in:rsc.dat(15:0) input 16 {psum_in:rsc.dat(15)} {psum_in:rsc.dat(14)} {psum_in:rsc.dat(13)} {psum_in:rsc.dat(12)} {psum_in:rsc.dat(11)} {psum_in:rsc.dat(10)} {psum_in:rsc.dat(9)} {psum_in:rsc.dat(8)} {psum_in:rsc.dat(7)} {psum_in:rsc.dat(6)} {psum_in:rsc.dat(5)} {psum_in:rsc.dat(4)} {psum_in:rsc.dat(3)} {psum_in:rsc.dat(2)} {psum_in:rsc.dat(1)} {psum_in:rsc.dat(0)} -symbol left_portin noname -attr xrf 08497741-736d-480c-a045-49ad72b71692-7 -attr oid 4 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_in:rsc.dat}
-load portBus weight:rsc.dat(7:0) input 8 {weight:rsc.dat(7)} {weight:rsc.dat(6)} {weight:rsc.dat(5)} {weight:rsc.dat(4)} {weight:rsc.dat(3)} {weight:rsc.dat(2)} {weight:rsc.dat(1)} {weight:rsc.dat(0)} -symbol left_portin noname -attr xrf 08497741-736d-480c-a045-49ad72b71692-8 -attr oid 5 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/weight:rsc.dat}
-load portBus input_out:rsc.z(7:0) output 8 {input_out:rsc.z(7)} {input_out:rsc.z(6)} {input_out:rsc.z(5)} {input_out:rsc.z(4)} {input_out:rsc.z(3)} {input_out:rsc.z(2)} {input_out:rsc.z(1)} {input_out:rsc.z(0)} -symbol right_portout noname -attr xrf 08497741-736d-480c-a045-49ad72b71692-9 -attr oid 6 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_out:rsc.z}
-load portBus psum_out:rsc.z(15:0) output 16 {psum_out:rsc.z(15)} {psum_out:rsc.z(14)} {psum_out:rsc.z(13)} {psum_out:rsc.z(12)} {psum_out:rsc.z(11)} {psum_out:rsc.z(10)} {psum_out:rsc.z(9)} {psum_out:rsc.z(8)} {psum_out:rsc.z(7)} {psum_out:rsc.z(6)} {psum_out:rsc.z(5)} {psum_out:rsc.z(4)} {psum_out:rsc.z(3)} {psum_out:rsc.z(2)} {psum_out:rsc.z(1)} {psum_out:rsc.z(0)} -symbol right_portout noname -attr xrf 08497741-736d-480c-a045-49ad72b71692-10 -attr oid 7 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsc.z}
-load port {ccs_ccore_en} input -symbol left_portin noname -attr xrf 08497741-736d-480c-a045-49ad72b71692-11 -attr oid 8 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/ccs_ccore_en}
+load port {clk} input -symbol left_portin noname -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-4 -attr oid 1 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/clk}
+load port {arst_n} input -symbol left_portin noname -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-5 -attr oid 2 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/arst_n}
+load portBus input_in:rsc.dat(7:0) input 8 {input_in:rsc.dat(7)} {input_in:rsc.dat(6)} {input_in:rsc.dat(5)} {input_in:rsc.dat(4)} {input_in:rsc.dat(3)} {input_in:rsc.dat(2)} {input_in:rsc.dat(1)} {input_in:rsc.dat(0)} -symbol left_portin noname -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-6 -attr oid 3 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:rsc.dat}
+load portBus psum_in:rsc.dat(15:0) input 16 {psum_in:rsc.dat(15)} {psum_in:rsc.dat(14)} {psum_in:rsc.dat(13)} {psum_in:rsc.dat(12)} {psum_in:rsc.dat(11)} {psum_in:rsc.dat(10)} {psum_in:rsc.dat(9)} {psum_in:rsc.dat(8)} {psum_in:rsc.dat(7)} {psum_in:rsc.dat(6)} {psum_in:rsc.dat(5)} {psum_in:rsc.dat(4)} {psum_in:rsc.dat(3)} {psum_in:rsc.dat(2)} {psum_in:rsc.dat(1)} {psum_in:rsc.dat(0)} -symbol left_portin noname -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-7 -attr oid 4 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_in:rsc.dat}
+load portBus weight:rsc.dat(7:0) input 8 {weight:rsc.dat(7)} {weight:rsc.dat(6)} {weight:rsc.dat(5)} {weight:rsc.dat(4)} {weight:rsc.dat(3)} {weight:rsc.dat(2)} {weight:rsc.dat(1)} {weight:rsc.dat(0)} -symbol left_portin noname -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-8 -attr oid 5 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/weight:rsc.dat}
+load portBus input_out:rsc.z(7:0) output 8 {input_out:rsc.z(7)} {input_out:rsc.z(6)} {input_out:rsc.z(5)} {input_out:rsc.z(4)} {input_out:rsc.z(3)} {input_out:rsc.z(2)} {input_out:rsc.z(1)} {input_out:rsc.z(0)} -symbol right_portout noname -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-9 -attr oid 6 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_out:rsc.z}
+load portBus psum_out:rsc.z(15:0) output 16 {psum_out:rsc.z(15)} {psum_out:rsc.z(14)} {psum_out:rsc.z(13)} {psum_out:rsc.z(12)} {psum_out:rsc.z(11)} {psum_out:rsc.z(10)} {psum_out:rsc.z(9)} {psum_out:rsc.z(8)} {psum_out:rsc.z(7)} {psum_out:rsc.z(6)} {psum_out:rsc.z(5)} {psum_out:rsc.z(4)} {psum_out:rsc.z(3)} {psum_out:rsc.z(2)} {psum_out:rsc.z(1)} {psum_out:rsc.z(0)} -symbol right_portout noname -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-10 -attr oid 7 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsc.z}
+load port {ccs_ccore_en} input -symbol left_portin noname -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-11 -attr oid 8 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/ccs_ccore_en}
 load symbol "ccs_ioport.ccs_in" "ccs_ioport.ccs_in(1,8)" EXT boxcolor 0 \
      portBus dat input 8 {dat(7)} {dat(6)} {dat(5)} {dat(4)} {dat(3)} {dat(2)} {dat(1)} {dat(0)} \
      portBus idat output 8 {idat(7)} {idat(6)} {idat(5)} {idat(4)} {idat(3)} {idat(2)} {idat(1)} {idat(0)} \
@@ -99,7 +99,7 @@ load net {input_in:rsci.idat(4)} -attr vt d
 load net {input_in:rsci.idat(5)} -attr vt d
 load net {input_in:rsci.idat(6)} -attr vt d
 load net {input_in:rsci.idat(7)} -attr vt d
-load netBundle {input_in:rsci.idat} 8 {input_in:rsci.idat(0)} {input_in:rsci.idat(1)} {input_in:rsci.idat(2)} {input_in:rsci.idat(3)} {input_in:rsci.idat(4)} {input_in:rsci.idat(5)} {input_in:rsci.idat(6)} {input_in:rsci.idat(7)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-12 -attr oid 9 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:rsci.idat}
+load netBundle {input_in:rsci.idat} 8 {input_in:rsci.idat(0)} {input_in:rsci.idat(1)} {input_in:rsci.idat(2)} {input_in:rsci.idat(3)} {input_in:rsci.idat(4)} {input_in:rsci.idat(5)} {input_in:rsci.idat(6)} {input_in:rsci.idat(7)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-12 -attr oid 9 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:rsci.idat}
 load net {psum_in:rsci.idat(0)} -attr vt d
 load net {psum_in:rsci.idat(1)} -attr vt d
 load net {psum_in:rsci.idat(2)} -attr vt d
@@ -116,7 +116,7 @@ load net {psum_in:rsci.idat(12)} -attr vt d
 load net {psum_in:rsci.idat(13)} -attr vt d
 load net {psum_in:rsci.idat(14)} -attr vt d
 load net {psum_in:rsci.idat(15)} -attr vt d
-load netBundle {psum_in:rsci.idat} 16 {psum_in:rsci.idat(0)} {psum_in:rsci.idat(1)} {psum_in:rsci.idat(2)} {psum_in:rsci.idat(3)} {psum_in:rsci.idat(4)} {psum_in:rsci.idat(5)} {psum_in:rsci.idat(6)} {psum_in:rsci.idat(7)} {psum_in:rsci.idat(8)} {psum_in:rsci.idat(9)} {psum_in:rsci.idat(10)} {psum_in:rsci.idat(11)} {psum_in:rsci.idat(12)} {psum_in:rsci.idat(13)} {psum_in:rsci.idat(14)} {psum_in:rsci.idat(15)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-13 -attr oid 10 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_in:rsci.idat}
+load netBundle {psum_in:rsci.idat} 16 {psum_in:rsci.idat(0)} {psum_in:rsci.idat(1)} {psum_in:rsci.idat(2)} {psum_in:rsci.idat(3)} {psum_in:rsci.idat(4)} {psum_in:rsci.idat(5)} {psum_in:rsci.idat(6)} {psum_in:rsci.idat(7)} {psum_in:rsci.idat(8)} {psum_in:rsci.idat(9)} {psum_in:rsci.idat(10)} {psum_in:rsci.idat(11)} {psum_in:rsci.idat(12)} {psum_in:rsci.idat(13)} {psum_in:rsci.idat(14)} {psum_in:rsci.idat(15)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-13 -attr oid 10 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_in:rsci.idat}
 load net {weight:rsci.idat(0)} -attr vt d
 load net {weight:rsci.idat(1)} -attr vt d
 load net {weight:rsci.idat(2)} -attr vt d
@@ -125,7 +125,7 @@ load net {weight:rsci.idat(4)} -attr vt d
 load net {weight:rsci.idat(5)} -attr vt d
 load net {weight:rsci.idat(6)} -attr vt d
 load net {weight:rsci.idat(7)} -attr vt d
-load netBundle {weight:rsci.idat} 8 {weight:rsci.idat(0)} {weight:rsci.idat(1)} {weight:rsci.idat(2)} {weight:rsci.idat(3)} {weight:rsci.idat(4)} {weight:rsci.idat(5)} {weight:rsci.idat(6)} {weight:rsci.idat(7)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-14 -attr oid 11 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/weight:rsci.idat}
+load netBundle {weight:rsci.idat} 8 {weight:rsci.idat(0)} {weight:rsci.idat(1)} {weight:rsci.idat(2)} {weight:rsci.idat(3)} {weight:rsci.idat(4)} {weight:rsci.idat(5)} {weight:rsci.idat(6)} {weight:rsci.idat(7)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-14 -attr oid 11 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/weight:rsci.idat}
 load net {input_out:rsci.d(0)} -attr vt d
 load net {input_out:rsci.d(1)} -attr vt d
 load net {input_out:rsci.d(2)} -attr vt d
@@ -134,7 +134,7 @@ load net {input_out:rsci.d(4)} -attr vt d
 load net {input_out:rsci.d(5)} -attr vt d
 load net {input_out:rsci.d(6)} -attr vt d
 load net {input_out:rsci.d(7)} -attr vt d
-load netBundle {input_out:rsci.d} 8 {input_out:rsci.d(0)} {input_out:rsci.d(1)} {input_out:rsci.d(2)} {input_out:rsci.d(3)} {input_out:rsci.d(4)} {input_out:rsci.d(5)} {input_out:rsci.d(6)} {input_out:rsci.d(7)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-15 -attr oid 12 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_out:rsci.d}
+load netBundle {input_out:rsci.d} 8 {input_out:rsci.d(0)} {input_out:rsci.d(1)} {input_out:rsci.d(2)} {input_out:rsci.d(3)} {input_out:rsci.d(4)} {input_out:rsci.d(5)} {input_out:rsci.d(6)} {input_out:rsci.d(7)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-15 -attr oid 12 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_out:rsci.d}
 load net {psum_out:rsci.d(0)} -attr vt d
 load net {psum_out:rsci.d(1)} -attr vt d
 load net {psum_out:rsci.d(2)} -attr vt d
@@ -151,7 +151,7 @@ load net {psum_out:rsci.d(12)} -attr vt d
 load net {psum_out:rsci.d(13)} -attr vt d
 load net {psum_out:rsci.d(14)} -attr vt d
 load net {psum_out:rsci.d(15)} -attr vt d
-load netBundle {psum_out:rsci.d} 16 {psum_out:rsci.d(0)} {psum_out:rsci.d(1)} {psum_out:rsci.d(2)} {psum_out:rsci.d(3)} {psum_out:rsci.d(4)} {psum_out:rsci.d(5)} {psum_out:rsci.d(6)} {psum_out:rsci.d(7)} {psum_out:rsci.d(8)} {psum_out:rsci.d(9)} {psum_out:rsci.d(10)} {psum_out:rsci.d(11)} {psum_out:rsci.d(12)} {psum_out:rsci.d(13)} {psum_out:rsci.d(14)} {psum_out:rsci.d(15)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-16 -attr oid 13 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsci.d}
+load netBundle {psum_out:rsci.d} 16 {psum_out:rsci.d(0)} {psum_out:rsci.d(1)} {psum_out:rsci.d(2)} {psum_out:rsci.d(3)} {psum_out:rsci.d(4)} {psum_out:rsci.d(5)} {psum_out:rsci.d(6)} {psum_out:rsci.d(7)} {psum_out:rsci.d(8)} {psum_out:rsci.d(9)} {psum_out:rsci.d(10)} {psum_out:rsci.d(11)} {psum_out:rsci.d(12)} {psum_out:rsci.d(13)} {psum_out:rsci.d(14)} {psum_out:rsci.d(15)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-16 -attr oid 13 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsci.d}
 load net {acc.itm(0)} -attr vt d
 load net {acc.itm(1)} -attr vt d
 load net {acc.itm(2)} -attr vt d
@@ -168,7 +168,7 @@ load net {acc.itm(12)} -attr vt d
 load net {acc.itm(13)} -attr vt d
 load net {acc.itm(14)} -attr vt d
 load net {acc.itm(15)} -attr vt d
-load netBundle {acc.itm} 16 {acc.itm(0)} {acc.itm(1)} {acc.itm(2)} {acc.itm(3)} {acc.itm(4)} {acc.itm(5)} {acc.itm(6)} {acc.itm(7)} {acc.itm(8)} {acc.itm(9)} {acc.itm(10)} {acc.itm(11)} {acc.itm(12)} {acc.itm(13)} {acc.itm(14)} {acc.itm(15)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-17 -attr oid 14 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/acc.itm}
+load netBundle {acc.itm} 16 {acc.itm(0)} {acc.itm(1)} {acc.itm(2)} {acc.itm(3)} {acc.itm(4)} {acc.itm(5)} {acc.itm(6)} {acc.itm(7)} {acc.itm(8)} {acc.itm(9)} {acc.itm(10)} {acc.itm(11)} {acc.itm(12)} {acc.itm(13)} {acc.itm(14)} {acc.itm(15)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-17 -attr oid 14 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/acc.itm}
 load net {mul.itm(0)} -attr vt d
 load net {mul.itm(1)} -attr vt d
 load net {mul.itm(2)} -attr vt d
@@ -185,7 +185,7 @@ load net {mul.itm(12)} -attr vt d
 load net {mul.itm(13)} -attr vt d
 load net {mul.itm(14)} -attr vt d
 load net {mul.itm(15)} -attr vt d
-load netBundle {mul.itm} 16 {mul.itm(0)} {mul.itm(1)} {mul.itm(2)} {mul.itm(3)} {mul.itm(4)} {mul.itm(5)} {mul.itm(6)} {mul.itm(7)} {mul.itm(8)} {mul.itm(9)} {mul.itm(10)} {mul.itm(11)} {mul.itm(12)} {mul.itm(13)} {mul.itm(14)} {mul.itm(15)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-18 -attr oid 15 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/mul.itm}
+load netBundle {mul.itm} 16 {mul.itm(0)} {mul.itm(1)} {mul.itm(2)} {mul.itm(3)} {mul.itm(4)} {mul.itm(5)} {mul.itm(6)} {mul.itm(7)} {mul.itm(8)} {mul.itm(9)} {mul.itm(10)} {mul.itm(11)} {mul.itm(12)} {mul.itm(13)} {mul.itm(14)} {mul.itm(15)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-18 -attr oid 15 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/mul.itm}
 load net {input_in:asn(input_in.buf.sva#1).itm(0)} -attr vt d
 load net {input_in:asn(input_in.buf.sva#1).itm(1)} -attr vt d
 load net {input_in:asn(input_in.buf.sva#1).itm(2)} -attr vt d
@@ -194,7 +194,7 @@ load net {input_in:asn(input_in.buf.sva#1).itm(4)} -attr vt d
 load net {input_in:asn(input_in.buf.sva#1).itm(5)} -attr vt d
 load net {input_in:asn(input_in.buf.sva#1).itm(6)} -attr vt d
 load net {input_in:asn(input_in.buf.sva#1).itm(7)} -attr vt d
-load netBundle {input_in:asn(input_in.buf.sva#1).itm} 8 {input_in:asn(input_in.buf.sva#1).itm(0)} {input_in:asn(input_in.buf.sva#1).itm(1)} {input_in:asn(input_in.buf.sva#1).itm(2)} {input_in:asn(input_in.buf.sva#1).itm(3)} {input_in:asn(input_in.buf.sva#1).itm(4)} {input_in:asn(input_in.buf.sva#1).itm(5)} {input_in:asn(input_in.buf.sva#1).itm(6)} {input_in:asn(input_in.buf.sva#1).itm(7)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-19 -attr oid 16 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:asn(input_in.buf.sva#1).itm}
+load netBundle {input_in:asn(input_in.buf.sva#1).itm} 8 {input_in:asn(input_in.buf.sva#1).itm(0)} {input_in:asn(input_in.buf.sva#1).itm(1)} {input_in:asn(input_in.buf.sva#1).itm(2)} {input_in:asn(input_in.buf.sva#1).itm(3)} {input_in:asn(input_in.buf.sva#1).itm(4)} {input_in:asn(input_in.buf.sva#1).itm(5)} {input_in:asn(input_in.buf.sva#1).itm(6)} {input_in:asn(input_in.buf.sva#1).itm(7)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-19 -attr oid 16 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:asn(input_in.buf.sva#1).itm}
 load net {weight:asn(weight.buf.sva#1).itm(0)} -attr vt d
 load net {weight:asn(weight.buf.sva#1).itm(1)} -attr vt d
 load net {weight:asn(weight.buf.sva#1).itm(2)} -attr vt d
@@ -203,11 +203,11 @@ load net {weight:asn(weight.buf.sva#1).itm(4)} -attr vt d
 load net {weight:asn(weight.buf.sva#1).itm(5)} -attr vt d
 load net {weight:asn(weight.buf.sva#1).itm(6)} -attr vt d
 load net {weight:asn(weight.buf.sva#1).itm(7)} -attr vt d
-load netBundle {weight:asn(weight.buf.sva#1).itm} 8 {weight:asn(weight.buf.sva#1).itm(0)} {weight:asn(weight.buf.sva#1).itm(1)} {weight:asn(weight.buf.sva#1).itm(2)} {weight:asn(weight.buf.sva#1).itm(3)} {weight:asn(weight.buf.sva#1).itm(4)} {weight:asn(weight.buf.sva#1).itm(5)} {weight:asn(weight.buf.sva#1).itm(6)} {weight:asn(weight.buf.sva#1).itm(7)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-20 -attr oid 17 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/weight:asn(weight.buf.sva#1).itm}
-load net {clk} -attr xrf 08497741-736d-480c-a045-49ad72b71692-21 -attr oid 18 -attr vt d
-load net {clk} -port {clk} -attr xrf 08497741-736d-480c-a045-49ad72b71692-22 -attr oid 19 -attr vt d
-load net {arst_n} -attr xrf 08497741-736d-480c-a045-49ad72b71692-23 -attr oid 20 -attr vt d
-load net {arst_n} -port {arst_n} -attr xrf 08497741-736d-480c-a045-49ad72b71692-24 -attr oid 21 -attr vt d
+load netBundle {weight:asn(weight.buf.sva#1).itm} 8 {weight:asn(weight.buf.sva#1).itm(0)} {weight:asn(weight.buf.sva#1).itm(1)} {weight:asn(weight.buf.sva#1).itm(2)} {weight:asn(weight.buf.sva#1).itm(3)} {weight:asn(weight.buf.sva#1).itm(4)} {weight:asn(weight.buf.sva#1).itm(5)} {weight:asn(weight.buf.sva#1).itm(6)} {weight:asn(weight.buf.sva#1).itm(7)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-20 -attr oid 17 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/weight:asn(weight.buf.sva#1).itm}
+load net {clk} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-21 -attr oid 18 -attr vt d
+load net {clk} -port {clk} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-22 -attr oid 19 -attr vt d
+load net {arst_n} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-23 -attr oid 20 -attr vt d
+load net {arst_n} -port {arst_n} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-24 -attr oid 21 -attr vt d
 load net {input_in:rsc.dat(0)} -attr vt d
 load net {input_in:rsc.dat(1)} -attr vt d
 load net {input_in:rsc.dat(2)} -attr vt d
@@ -216,7 +216,7 @@ load net {input_in:rsc.dat(4)} -attr vt d
 load net {input_in:rsc.dat(5)} -attr vt d
 load net {input_in:rsc.dat(6)} -attr vt d
 load net {input_in:rsc.dat(7)} -attr vt d
-load netBundle {input_in:rsc.dat} 8 {input_in:rsc.dat(0)} {input_in:rsc.dat(1)} {input_in:rsc.dat(2)} {input_in:rsc.dat(3)} {input_in:rsc.dat(4)} {input_in:rsc.dat(5)} {input_in:rsc.dat(6)} {input_in:rsc.dat(7)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-25 -attr oid 22 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:rsc.dat}
+load netBundle {input_in:rsc.dat} 8 {input_in:rsc.dat(0)} {input_in:rsc.dat(1)} {input_in:rsc.dat(2)} {input_in:rsc.dat(3)} {input_in:rsc.dat(4)} {input_in:rsc.dat(5)} {input_in:rsc.dat(6)} {input_in:rsc.dat(7)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-25 -attr oid 22 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:rsc.dat}
 load net {input_in:rsc.dat(0)} -port {input_in:rsc.dat(0)} -attr vt d
 load net {input_in:rsc.dat(1)} -port {input_in:rsc.dat(1)} -attr vt d
 load net {input_in:rsc.dat(2)} -port {input_in:rsc.dat(2)} -attr vt d
@@ -225,7 +225,7 @@ load net {input_in:rsc.dat(4)} -port {input_in:rsc.dat(4)} -attr vt d
 load net {input_in:rsc.dat(5)} -port {input_in:rsc.dat(5)} -attr vt d
 load net {input_in:rsc.dat(6)} -port {input_in:rsc.dat(6)} -attr vt d
 load net {input_in:rsc.dat(7)} -port {input_in:rsc.dat(7)} -attr vt d
-load netBundle {input_in:rsc.dat} 8 {input_in:rsc.dat(0)} {input_in:rsc.dat(1)} {input_in:rsc.dat(2)} {input_in:rsc.dat(3)} {input_in:rsc.dat(4)} {input_in:rsc.dat(5)} {input_in:rsc.dat(6)} {input_in:rsc.dat(7)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-26 -attr oid 23 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:rsc.dat}
+load netBundle {input_in:rsc.dat} 8 {input_in:rsc.dat(0)} {input_in:rsc.dat(1)} {input_in:rsc.dat(2)} {input_in:rsc.dat(3)} {input_in:rsc.dat(4)} {input_in:rsc.dat(5)} {input_in:rsc.dat(6)} {input_in:rsc.dat(7)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-26 -attr oid 23 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:rsc.dat}
 load net {psum_in:rsc.dat(0)} -attr vt d
 load net {psum_in:rsc.dat(1)} -attr vt d
 load net {psum_in:rsc.dat(2)} -attr vt d
@@ -242,7 +242,7 @@ load net {psum_in:rsc.dat(12)} -attr vt d
 load net {psum_in:rsc.dat(13)} -attr vt d
 load net {psum_in:rsc.dat(14)} -attr vt d
 load net {psum_in:rsc.dat(15)} -attr vt d
-load netBundle {psum_in:rsc.dat} 16 {psum_in:rsc.dat(0)} {psum_in:rsc.dat(1)} {psum_in:rsc.dat(2)} {psum_in:rsc.dat(3)} {psum_in:rsc.dat(4)} {psum_in:rsc.dat(5)} {psum_in:rsc.dat(6)} {psum_in:rsc.dat(7)} {psum_in:rsc.dat(8)} {psum_in:rsc.dat(9)} {psum_in:rsc.dat(10)} {psum_in:rsc.dat(11)} {psum_in:rsc.dat(12)} {psum_in:rsc.dat(13)} {psum_in:rsc.dat(14)} {psum_in:rsc.dat(15)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-27 -attr oid 24 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_in:rsc.dat}
+load netBundle {psum_in:rsc.dat} 16 {psum_in:rsc.dat(0)} {psum_in:rsc.dat(1)} {psum_in:rsc.dat(2)} {psum_in:rsc.dat(3)} {psum_in:rsc.dat(4)} {psum_in:rsc.dat(5)} {psum_in:rsc.dat(6)} {psum_in:rsc.dat(7)} {psum_in:rsc.dat(8)} {psum_in:rsc.dat(9)} {psum_in:rsc.dat(10)} {psum_in:rsc.dat(11)} {psum_in:rsc.dat(12)} {psum_in:rsc.dat(13)} {psum_in:rsc.dat(14)} {psum_in:rsc.dat(15)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-27 -attr oid 24 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_in:rsc.dat}
 load net {psum_in:rsc.dat(0)} -port {psum_in:rsc.dat(0)} -attr vt d
 load net {psum_in:rsc.dat(1)} -port {psum_in:rsc.dat(1)} -attr vt d
 load net {psum_in:rsc.dat(2)} -port {psum_in:rsc.dat(2)} -attr vt d
@@ -259,7 +259,7 @@ load net {psum_in:rsc.dat(12)} -port {psum_in:rsc.dat(12)} -attr vt d
 load net {psum_in:rsc.dat(13)} -port {psum_in:rsc.dat(13)} -attr vt d
 load net {psum_in:rsc.dat(14)} -port {psum_in:rsc.dat(14)} -attr vt d
 load net {psum_in:rsc.dat(15)} -port {psum_in:rsc.dat(15)} -attr vt d
-load netBundle {psum_in:rsc.dat} 16 {psum_in:rsc.dat(0)} {psum_in:rsc.dat(1)} {psum_in:rsc.dat(2)} {psum_in:rsc.dat(3)} {psum_in:rsc.dat(4)} {psum_in:rsc.dat(5)} {psum_in:rsc.dat(6)} {psum_in:rsc.dat(7)} {psum_in:rsc.dat(8)} {psum_in:rsc.dat(9)} {psum_in:rsc.dat(10)} {psum_in:rsc.dat(11)} {psum_in:rsc.dat(12)} {psum_in:rsc.dat(13)} {psum_in:rsc.dat(14)} {psum_in:rsc.dat(15)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-28 -attr oid 25 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_in:rsc.dat}
+load netBundle {psum_in:rsc.dat} 16 {psum_in:rsc.dat(0)} {psum_in:rsc.dat(1)} {psum_in:rsc.dat(2)} {psum_in:rsc.dat(3)} {psum_in:rsc.dat(4)} {psum_in:rsc.dat(5)} {psum_in:rsc.dat(6)} {psum_in:rsc.dat(7)} {psum_in:rsc.dat(8)} {psum_in:rsc.dat(9)} {psum_in:rsc.dat(10)} {psum_in:rsc.dat(11)} {psum_in:rsc.dat(12)} {psum_in:rsc.dat(13)} {psum_in:rsc.dat(14)} {psum_in:rsc.dat(15)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-28 -attr oid 25 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_in:rsc.dat}
 load net {weight:rsc.dat(0)} -attr vt d
 load net {weight:rsc.dat(1)} -attr vt d
 load net {weight:rsc.dat(2)} -attr vt d
@@ -268,7 +268,7 @@ load net {weight:rsc.dat(4)} -attr vt d
 load net {weight:rsc.dat(5)} -attr vt d
 load net {weight:rsc.dat(6)} -attr vt d
 load net {weight:rsc.dat(7)} -attr vt d
-load netBundle {weight:rsc.dat} 8 {weight:rsc.dat(0)} {weight:rsc.dat(1)} {weight:rsc.dat(2)} {weight:rsc.dat(3)} {weight:rsc.dat(4)} {weight:rsc.dat(5)} {weight:rsc.dat(6)} {weight:rsc.dat(7)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-29 -attr oid 26 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/weight:rsc.dat}
+load netBundle {weight:rsc.dat} 8 {weight:rsc.dat(0)} {weight:rsc.dat(1)} {weight:rsc.dat(2)} {weight:rsc.dat(3)} {weight:rsc.dat(4)} {weight:rsc.dat(5)} {weight:rsc.dat(6)} {weight:rsc.dat(7)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-29 -attr oid 26 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/weight:rsc.dat}
 load net {weight:rsc.dat(0)} -port {weight:rsc.dat(0)} -attr vt d
 load net {weight:rsc.dat(1)} -port {weight:rsc.dat(1)} -attr vt d
 load net {weight:rsc.dat(2)} -port {weight:rsc.dat(2)} -attr vt d
@@ -277,7 +277,7 @@ load net {weight:rsc.dat(4)} -port {weight:rsc.dat(4)} -attr vt d
 load net {weight:rsc.dat(5)} -port {weight:rsc.dat(5)} -attr vt d
 load net {weight:rsc.dat(6)} -port {weight:rsc.dat(6)} -attr vt d
 load net {weight:rsc.dat(7)} -port {weight:rsc.dat(7)} -attr vt d
-load netBundle {weight:rsc.dat} 8 {weight:rsc.dat(0)} {weight:rsc.dat(1)} {weight:rsc.dat(2)} {weight:rsc.dat(3)} {weight:rsc.dat(4)} {weight:rsc.dat(5)} {weight:rsc.dat(6)} {weight:rsc.dat(7)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-30 -attr oid 27 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/weight:rsc.dat}
+load netBundle {weight:rsc.dat} 8 {weight:rsc.dat(0)} {weight:rsc.dat(1)} {weight:rsc.dat(2)} {weight:rsc.dat(3)} {weight:rsc.dat(4)} {weight:rsc.dat(5)} {weight:rsc.dat(6)} {weight:rsc.dat(7)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-30 -attr oid 27 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/weight:rsc.dat}
 load net {input_out:rsc.z(0)} -attr vt d
 load net {input_out:rsc.z(1)} -attr vt d
 load net {input_out:rsc.z(2)} -attr vt d
@@ -286,7 +286,7 @@ load net {input_out:rsc.z(4)} -attr vt d
 load net {input_out:rsc.z(5)} -attr vt d
 load net {input_out:rsc.z(6)} -attr vt d
 load net {input_out:rsc.z(7)} -attr vt d
-load netBundle {input_out:rsc.z} 8 {input_out:rsc.z(0)} {input_out:rsc.z(1)} {input_out:rsc.z(2)} {input_out:rsc.z(3)} {input_out:rsc.z(4)} {input_out:rsc.z(5)} {input_out:rsc.z(6)} {input_out:rsc.z(7)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-31 -attr oid 28 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_out:rsc.z}
+load netBundle {input_out:rsc.z} 8 {input_out:rsc.z(0)} {input_out:rsc.z(1)} {input_out:rsc.z(2)} {input_out:rsc.z(3)} {input_out:rsc.z(4)} {input_out:rsc.z(5)} {input_out:rsc.z(6)} {input_out:rsc.z(7)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-31 -attr oid 28 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_out:rsc.z}
 load net {input_out:rsc.z(0)} -port {input_out:rsc.z(0)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_out:rsc.z}
 load net {input_out:rsc.z(1)} -port {input_out:rsc.z(1)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_out:rsc.z}
 load net {input_out:rsc.z(2)} -port {input_out:rsc.z(2)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_out:rsc.z}
@@ -311,7 +311,7 @@ load net {psum_out:rsc.z(12)} -attr vt d
 load net {psum_out:rsc.z(13)} -attr vt d
 load net {psum_out:rsc.z(14)} -attr vt d
 load net {psum_out:rsc.z(15)} -attr vt d
-load netBundle {psum_out:rsc.z} 16 {psum_out:rsc.z(0)} {psum_out:rsc.z(1)} {psum_out:rsc.z(2)} {psum_out:rsc.z(3)} {psum_out:rsc.z(4)} {psum_out:rsc.z(5)} {psum_out:rsc.z(6)} {psum_out:rsc.z(7)} {psum_out:rsc.z(8)} {psum_out:rsc.z(9)} {psum_out:rsc.z(10)} {psum_out:rsc.z(11)} {psum_out:rsc.z(12)} {psum_out:rsc.z(13)} {psum_out:rsc.z(14)} {psum_out:rsc.z(15)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-32 -attr oid 29 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsc.z}
+load netBundle {psum_out:rsc.z} 16 {psum_out:rsc.z(0)} {psum_out:rsc.z(1)} {psum_out:rsc.z(2)} {psum_out:rsc.z(3)} {psum_out:rsc.z(4)} {psum_out:rsc.z(5)} {psum_out:rsc.z(6)} {psum_out:rsc.z(7)} {psum_out:rsc.z(8)} {psum_out:rsc.z(9)} {psum_out:rsc.z(10)} {psum_out:rsc.z(11)} {psum_out:rsc.z(12)} {psum_out:rsc.z(13)} {psum_out:rsc.z(14)} {psum_out:rsc.z(15)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-32 -attr oid 29 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsc.z}
 load net {psum_out:rsc.z(0)} -port {psum_out:rsc.z(0)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsc.z}
 load net {psum_out:rsc.z(1)} -port {psum_out:rsc.z(1)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsc.z}
 load net {psum_out:rsc.z(2)} -port {psum_out:rsc.z(2)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsc.z}
@@ -328,9 +328,9 @@ load net {psum_out:rsc.z(12)} -port {psum_out:rsc.z(12)} -attr vt d -attr @path 
 load net {psum_out:rsc.z(13)} -port {psum_out:rsc.z(13)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsc.z}
 load net {psum_out:rsc.z(14)} -port {psum_out:rsc.z(14)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsc.z}
 load net {psum_out:rsc.z(15)} -port {psum_out:rsc.z(15)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsc.z}
-load net {ccs_ccore_en} -attr xrf 08497741-736d-480c-a045-49ad72b71692-33 -attr oid 30 -attr vt d
-load net {ccs_ccore_en} -port {ccs_ccore_en} -attr xrf 08497741-736d-480c-a045-49ad72b71692-34 -attr oid 31 -attr vt d
-load inst "input_in:rsci" "ccs_ioport.ccs_in" "ccs_ioport.ccs_in(1,8)" -attr xrf 08497741-736d-480c-a045-49ad72b71692-35 -attr oid 32 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:rsci} -attr qmod "ccs_ioport.ccs_in(1,8)"
+load net {ccs_ccore_en} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-33 -attr oid 30 -attr vt d
+load net {ccs_ccore_en} -port {ccs_ccore_en} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-34 -attr oid 31 -attr vt d
+load inst "input_in:rsci" "ccs_ioport.ccs_in" "ccs_ioport.ccs_in(1,8)" -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-35 -attr oid 32 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:rsci} -attr qmod "ccs_ioport.ccs_in(1,8)"
 load net {input_in:rsc.dat(0)} -pin  "input_in:rsci" {dat(0)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:rsc.dat}
 load net {input_in:rsc.dat(1)} -pin  "input_in:rsci" {dat(1)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:rsc.dat}
 load net {input_in:rsc.dat(2)} -pin  "input_in:rsci" {dat(2)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:rsc.dat}
@@ -347,7 +347,7 @@ load net {input_in:rsci.idat(4)} -pin  "input_in:rsci" {idat(4)} -attr vt d -att
 load net {input_in:rsci.idat(5)} -pin  "input_in:rsci" {idat(5)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:rsci.idat}
 load net {input_in:rsci.idat(6)} -pin  "input_in:rsci" {idat(6)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:rsci.idat}
 load net {input_in:rsci.idat(7)} -pin  "input_in:rsci" {idat(7)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:rsci.idat}
-load inst "psum_in:rsci" "ccs_ioport.ccs_in" "ccs_ioport.ccs_in(2,16)" -attr xrf 08497741-736d-480c-a045-49ad72b71692-36 -attr oid 33 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_in:rsci} -attr qmod "ccs_ioport.ccs_in(2,16)"
+load inst "psum_in:rsci" "ccs_ioport.ccs_in" "ccs_ioport.ccs_in(2,16)" -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-36 -attr oid 33 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_in:rsci} -attr qmod "ccs_ioport.ccs_in(2,16)"
 load net {psum_in:rsc.dat(0)} -pin  "psum_in:rsci" {dat(0)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_in:rsc.dat}
 load net {psum_in:rsc.dat(1)} -pin  "psum_in:rsci" {dat(1)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_in:rsc.dat}
 load net {psum_in:rsc.dat(2)} -pin  "psum_in:rsci" {dat(2)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_in:rsc.dat}
@@ -380,7 +380,7 @@ load net {psum_in:rsci.idat(12)} -pin  "psum_in:rsci" {idat(12)} -attr vt d -att
 load net {psum_in:rsci.idat(13)} -pin  "psum_in:rsci" {idat(13)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_in:rsci.idat}
 load net {psum_in:rsci.idat(14)} -pin  "psum_in:rsci" {idat(14)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_in:rsci.idat}
 load net {psum_in:rsci.idat(15)} -pin  "psum_in:rsci" {idat(15)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_in:rsci.idat}
-load inst "weight:rsci" "ccs_ioport.ccs_in" "ccs_ioport.ccs_in(3,8)" -attr xrf 08497741-736d-480c-a045-49ad72b71692-37 -attr oid 34 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/weight:rsci} -attr qmod "ccs_ioport.ccs_in(3,8)"
+load inst "weight:rsci" "ccs_ioport.ccs_in" "ccs_ioport.ccs_in(3,8)" -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-37 -attr oid 34 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/weight:rsci} -attr qmod "ccs_ioport.ccs_in(3,8)"
 load net {weight:rsc.dat(0)} -pin  "weight:rsci" {dat(0)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/weight:rsc.dat}
 load net {weight:rsc.dat(1)} -pin  "weight:rsci" {dat(1)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/weight:rsc.dat}
 load net {weight:rsc.dat(2)} -pin  "weight:rsci" {dat(2)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/weight:rsc.dat}
@@ -397,7 +397,7 @@ load net {weight:rsci.idat(4)} -pin  "weight:rsci" {idat(4)} -attr vt d -attr @p
 load net {weight:rsci.idat(5)} -pin  "weight:rsci" {idat(5)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/weight:rsci.idat}
 load net {weight:rsci.idat(6)} -pin  "weight:rsci" {idat(6)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/weight:rsci.idat}
 load net {weight:rsci.idat(7)} -pin  "weight:rsci" {idat(7)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/weight:rsci.idat}
-load inst "input_out:rsci" "mgc_ioport.mgc_out_dreg" "mgc_ioport.mgc_out_dreg(4,8)" -attr xrf 08497741-736d-480c-a045-49ad72b71692-38 -attr oid 35 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_out:rsci} -attr qmod "mgc_ioport.mgc_out_dreg(4,8)"
+load inst "input_out:rsci" "mgc_ioport.mgc_out_dreg" "mgc_ioport.mgc_out_dreg(4,8)" -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-38 -attr oid 35 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_out:rsci} -attr qmod "mgc_ioport.mgc_out_dreg(4,8)"
 load net {input_out:rsci.d(0)} -pin  "input_out:rsci" {d(0)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_out:rsci.d}
 load net {input_out:rsci.d(1)} -pin  "input_out:rsci" {d(1)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_out:rsci.d}
 load net {input_out:rsci.d(2)} -pin  "input_out:rsci" {d(2)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_out:rsci.d}
@@ -414,7 +414,7 @@ load net {input_out:rsc.z(4)} -pin  "input_out:rsci" {z(4)} -attr vt d -attr @pa
 load net {input_out:rsc.z(5)} -pin  "input_out:rsci" {z(5)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_out:rsc.z}
 load net {input_out:rsc.z(6)} -pin  "input_out:rsci" {z(6)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_out:rsc.z}
 load net {input_out:rsc.z(7)} -pin  "input_out:rsci" {z(7)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_out:rsc.z}
-load inst "psum_out:rsci" "mgc_ioport.mgc_out_dreg" "mgc_ioport.mgc_out_dreg(5,16)" -attr xrf 08497741-736d-480c-a045-49ad72b71692-39 -attr oid 36 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsci} -attr qmod "mgc_ioport.mgc_out_dreg(5,16)"
+load inst "psum_out:rsci" "mgc_ioport.mgc_out_dreg" "mgc_ioport.mgc_out_dreg(5,16)" -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-39 -attr oid 36 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsci} -attr qmod "mgc_ioport.mgc_out_dreg(5,16)"
 load net {psum_out:rsci.d(0)} -pin  "psum_out:rsci" {d(0)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsci.d}
 load net {psum_out:rsci.d(1)} -pin  "psum_out:rsci" {d(1)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsci.d}
 load net {psum_out:rsci.d(2)} -pin  "psum_out:rsci" {d(2)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsci.d}
@@ -447,7 +447,7 @@ load net {psum_out:rsc.z(12)} -pin  "psum_out:rsci" {z(12)} -attr vt d -attr @pa
 load net {psum_out:rsc.z(13)} -pin  "psum_out:rsci" {z(13)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsc.z}
 load net {psum_out:rsc.z(14)} -pin  "psum_out:rsci" {z(14)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsc.z}
 load net {psum_out:rsc.z(15)} -pin  "psum_out:rsci" {z(15)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsc.z}
-load inst "mul" "mul(8,1,8,1,16)" "INTERFACE" -attr xrf 08497741-736d-480c-a045-49ad72b71692-40 -attr oid 37 -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/mul} -attr area 289.686149 -attr delay 1.085223 -attr qmod "nangate-45nm_beh.mgc_mul(8,1,8,1,16,4)"
+load inst "mul" "mul(8,1,8,1,16)" "INTERFACE" -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-40 -attr oid 37 -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/mul} -attr area 289.686149 -attr delay 1.085223 -attr qmod "nangate-45nm_beh.mgc_mul(8,1,8,1,16,4)"
 load net {input_in:rsci.idat(0)} -pin  "mul" {A(0)} -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:asn(input_in.buf.sva#1).itm}
 load net {input_in:rsci.idat(1)} -pin  "mul" {A(1)} -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:asn(input_in.buf.sva#1).itm}
 load net {input_in:rsci.idat(2)} -pin  "mul" {A(2)} -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:asn(input_in.buf.sva#1).itm}
@@ -480,7 +480,7 @@ load net {mul.itm(12)} -pin  "mul" {Z(12)} -attr vt dc -attr @path {/ProcessingE
 load net {mul.itm(13)} -pin  "mul" {Z(13)} -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/mul.itm}
 load net {mul.itm(14)} -pin  "mul" {Z(14)} -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/mul.itm}
 load net {mul.itm(15)} -pin  "mul" {Z(15)} -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/mul.itm}
-load inst "acc" "add(16,-1,16,-1,16)" "INTERFACE" -attr xrf 08497741-736d-480c-a045-49ad72b71692-41 -attr oid 38 -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/acc} -attr area 68.119893 -attr delay 1.182609 -attr qmod "nangate-45nm_beh.mgc_add(16,0,16,0,16,4)"
+load inst "acc" "add(16,-1,16,-1,16)" "INTERFACE" -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-41 -attr oid 38 -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/acc} -attr area 68.119893 -attr delay 1.182609 -attr qmod "nangate-45nm_beh.mgc_add(16,0,16,0,16,4)"
 load net {psum_in:rsci.idat(0)} -pin  "acc" {A(0)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_in:rsci.idat}
 load net {psum_in:rsci.idat(1)} -pin  "acc" {A(1)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_in:rsci.idat}
 load net {psum_in:rsci.idat(2)} -pin  "acc" {A(2)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_in:rsci.idat}
@@ -529,7 +529,7 @@ load net {acc.itm(12)} -pin  "acc" {Z(12)} -attr vt dc -attr @path {/ProcessingE
 load net {acc.itm(13)} -pin  "acc" {Z(13)} -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/acc.itm}
 load net {acc.itm(14)} -pin  "acc" {Z(14)} -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/acc.itm}
 load net {acc.itm(15)} -pin  "acc" {Z(15)} -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/acc.itm}
-load inst "reg(psum_out:rsci.d)" "reg(16,1,1,-1,0)" "INTERFACE" -attr xrf 08497741-736d-480c-a045-49ad72b71692-42 -attr oid 39 -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/reg(psum_out:rsci.d)} -attr area 85.331720 -attr delay 0.101000 -attr qmod "nangate-45nm_beh.mgc_reg_pos(16,1,0,0,0,1,1,1)"
+load inst "reg(psum_out:rsci.d)" "reg(16,1,1,-1,0)" "INTERFACE" -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-42 -attr oid 39 -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/reg(psum_out:rsci.d)} -attr area 85.331720 -attr delay 0.101000 -attr qmod "nangate-45nm_beh.mgc_reg_pos(16,1,0,0,0,1,1,1)"
 load net {acc.itm(0)} -pin  "reg(psum_out:rsci.d)" {D(0)} -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/acc.itm}
 load net {acc.itm(1)} -pin  "reg(psum_out:rsci.d)" {D(1)} -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/acc.itm}
 load net {acc.itm(2)} -pin  "reg(psum_out:rsci.d)" {D(2)} -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/acc.itm}
@@ -562,7 +562,7 @@ load net {GND} -pin  "reg(psum_out:rsci.d)" {DRa(12)} -attr @path {/ProcessingEl
 load net {GND} -pin  "reg(psum_out:rsci.d)" {DRa(13)} -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/0#2}
 load net {GND} -pin  "reg(psum_out:rsci.d)" {DRa(14)} -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/0#2}
 load net {GND} -pin  "reg(psum_out:rsci.d)" {DRa(15)} -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/0#2}
-load net {clk} -pin  "reg(psum_out:rsci.d)" {clk} -attr xrf 08497741-736d-480c-a045-49ad72b71692-43 -attr oid 40 -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/clk}
+load net {clk} -pin  "reg(psum_out:rsci.d)" {clk} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-43 -attr oid 40 -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/clk}
 load net {ccs_ccore_en} -pin  "reg(psum_out:rsci.d)" {en(0)} -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/ccs_ccore_en}
 load net {arst_n} -pin  "reg(psum_out:rsci.d)" {Ra(0)} -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/arst_n}
 load net {psum_out:rsci.d(0)} -pin  "reg(psum_out:rsci.d)" {Z(0)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsci.d}
@@ -581,7 +581,7 @@ load net {psum_out:rsci.d(12)} -pin  "reg(psum_out:rsci.d)" {Z(12)} -attr vt d -
 load net {psum_out:rsci.d(13)} -pin  "reg(psum_out:rsci.d)" {Z(13)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsci.d}
 load net {psum_out:rsci.d(14)} -pin  "reg(psum_out:rsci.d)" {Z(14)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsci.d}
 load net {psum_out:rsci.d(15)} -pin  "reg(psum_out:rsci.d)" {Z(15)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/psum_out:rsci.d}
-load inst "reg(input_out:rsci.d)" "reg(8,1,1,-1,0)" "INTERFACE" -attr xrf 08497741-736d-480c-a045-49ad72b71692-44 -attr oid 41 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/reg(input_out:rsci.d)} -attr area 42.666360 -attr delay 0.101000 -attr qmod "nangate-45nm_beh.mgc_reg_pos(8,1,0,0,0,1,1,1)"
+load inst "reg(input_out:rsci.d)" "reg(8,1,1,-1,0)" "INTERFACE" -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-44 -attr oid 41 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/reg(input_out:rsci.d)} -attr area 42.666360 -attr delay 0.101000 -attr qmod "nangate-45nm_beh.mgc_reg_pos(8,1,0,0,0,1,1,1)"
 load net {input_in:rsci.idat(0)} -pin  "reg(input_out:rsci.d)" {D(0)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:rsci.idat}
 load net {input_in:rsci.idat(1)} -pin  "reg(input_out:rsci.d)" {D(1)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:rsci.idat}
 load net {input_in:rsci.idat(2)} -pin  "reg(input_out:rsci.d)" {D(2)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_in:rsci.idat}
@@ -598,7 +598,7 @@ load net {GND} -pin  "reg(input_out:rsci.d)" {DRa(4)} -attr @path {/ProcessingEl
 load net {GND} -pin  "reg(input_out:rsci.d)" {DRa(5)} -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/0#1}
 load net {GND} -pin  "reg(input_out:rsci.d)" {DRa(6)} -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/0#1}
 load net {GND} -pin  "reg(input_out:rsci.d)" {DRa(7)} -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/0#1}
-load net {clk} -pin  "reg(input_out:rsci.d)" {clk} -attr xrf 08497741-736d-480c-a045-49ad72b71692-45 -attr oid 42 -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/clk}
+load net {clk} -pin  "reg(input_out:rsci.d)" {clk} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-45 -attr oid 42 -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/clk}
 load net {ccs_ccore_en} -pin  "reg(input_out:rsci.d)" {en(0)} -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/ccs_ccore_en}
 load net {arst_n} -pin  "reg(input_out:rsci.d)" {Ra(0)} -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/arst_n}
 load net {input_out:rsci.d(0)} -pin  "reg(input_out:rsci.d)" {Z(0)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run/input_out:rsci.d}
@@ -637,15 +637,15 @@ load symbol probe_out noname DEF \
    attrdsp @name -cl  25 0 12 \
    fpath 0 0 7 -7 14 0 7 7 0 0 \
    place output_port fillcolor 3
-load port {clk} input -symbol left_portin noname -attr xrf 08497741-736d-480c-a045-49ad72b71692-46 -attr oid 43 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/clk}
-load port {arst_n} input -symbol left_portin noname -attr xrf 08497741-736d-480c-a045-49ad72b71692-47 -attr oid 44 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/arst_n}
-load portBus input_in:rsc.dat(7:0) input 8 {input_in:rsc.dat(7)} {input_in:rsc.dat(6)} {input_in:rsc.dat(5)} {input_in:rsc.dat(4)} {input_in:rsc.dat(3)} {input_in:rsc.dat(2)} {input_in:rsc.dat(1)} {input_in:rsc.dat(0)} -symbol left_portin noname -attr xrf 08497741-736d-480c-a045-49ad72b71692-48 -attr oid 45 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/input_in:rsc.dat}
-load portBus psum_in:rsc.dat(15:0) input 16 {psum_in:rsc.dat(15)} {psum_in:rsc.dat(14)} {psum_in:rsc.dat(13)} {psum_in:rsc.dat(12)} {psum_in:rsc.dat(11)} {psum_in:rsc.dat(10)} {psum_in:rsc.dat(9)} {psum_in:rsc.dat(8)} {psum_in:rsc.dat(7)} {psum_in:rsc.dat(6)} {psum_in:rsc.dat(5)} {psum_in:rsc.dat(4)} {psum_in:rsc.dat(3)} {psum_in:rsc.dat(2)} {psum_in:rsc.dat(1)} {psum_in:rsc.dat(0)} -symbol left_portin noname -attr xrf 08497741-736d-480c-a045-49ad72b71692-49 -attr oid 46 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_in:rsc.dat}
-load portBus weight:rsc.dat(7:0) input 8 {weight:rsc.dat(7)} {weight:rsc.dat(6)} {weight:rsc.dat(5)} {weight:rsc.dat(4)} {weight:rsc.dat(3)} {weight:rsc.dat(2)} {weight:rsc.dat(1)} {weight:rsc.dat(0)} -symbol left_portin noname -attr xrf 08497741-736d-480c-a045-49ad72b71692-50 -attr oid 47 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/weight:rsc.dat}
-load portBus input_out:rsc.z(7:0) output 8 {input_out:rsc.z(7)} {input_out:rsc.z(6)} {input_out:rsc.z(5)} {input_out:rsc.z(4)} {input_out:rsc.z(3)} {input_out:rsc.z(2)} {input_out:rsc.z(1)} {input_out:rsc.z(0)} -symbol right_portout noname -attr xrf 08497741-736d-480c-a045-49ad72b71692-51 -attr oid 48 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/input_out:rsc.z}
-load portBus psum_out:rsc.z(15:0) output 16 {psum_out:rsc.z(15)} {psum_out:rsc.z(14)} {psum_out:rsc.z(13)} {psum_out:rsc.z(12)} {psum_out:rsc.z(11)} {psum_out:rsc.z(10)} {psum_out:rsc.z(9)} {psum_out:rsc.z(8)} {psum_out:rsc.z(7)} {psum_out:rsc.z(6)} {psum_out:rsc.z(5)} {psum_out:rsc.z(4)} {psum_out:rsc.z(3)} {psum_out:rsc.z(2)} {psum_out:rsc.z(1)} {psum_out:rsc.z(0)} -symbol right_portout noname -attr xrf 08497741-736d-480c-a045-49ad72b71692-52 -attr oid 49 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_out:rsc.z}
-load port {ccs_ccore_start:rsc.dat} input -symbol left_portin noname -attr xrf 08497741-736d-480c-a045-49ad72b71692-53 -attr oid 50 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ccs_ccore_start:rsc.dat}
-load port {ccs_ccore_en} input -symbol left_portin noname -attr xrf 08497741-736d-480c-a045-49ad72b71692-54 -attr oid 51 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ccs_ccore_en}
+load port {clk} input -symbol left_portin noname -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-46 -attr oid 43 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/clk}
+load port {arst_n} input -symbol left_portin noname -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-47 -attr oid 44 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/arst_n}
+load portBus input_in:rsc.dat(7:0) input 8 {input_in:rsc.dat(7)} {input_in:rsc.dat(6)} {input_in:rsc.dat(5)} {input_in:rsc.dat(4)} {input_in:rsc.dat(3)} {input_in:rsc.dat(2)} {input_in:rsc.dat(1)} {input_in:rsc.dat(0)} -symbol left_portin noname -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-48 -attr oid 45 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/input_in:rsc.dat}
+load portBus psum_in:rsc.dat(15:0) input 16 {psum_in:rsc.dat(15)} {psum_in:rsc.dat(14)} {psum_in:rsc.dat(13)} {psum_in:rsc.dat(12)} {psum_in:rsc.dat(11)} {psum_in:rsc.dat(10)} {psum_in:rsc.dat(9)} {psum_in:rsc.dat(8)} {psum_in:rsc.dat(7)} {psum_in:rsc.dat(6)} {psum_in:rsc.dat(5)} {psum_in:rsc.dat(4)} {psum_in:rsc.dat(3)} {psum_in:rsc.dat(2)} {psum_in:rsc.dat(1)} {psum_in:rsc.dat(0)} -symbol left_portin noname -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-49 -attr oid 46 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_in:rsc.dat}
+load portBus weight:rsc.dat(7:0) input 8 {weight:rsc.dat(7)} {weight:rsc.dat(6)} {weight:rsc.dat(5)} {weight:rsc.dat(4)} {weight:rsc.dat(3)} {weight:rsc.dat(2)} {weight:rsc.dat(1)} {weight:rsc.dat(0)} -symbol left_portin noname -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-50 -attr oid 47 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/weight:rsc.dat}
+load portBus input_out:rsc.z(7:0) output 8 {input_out:rsc.z(7)} {input_out:rsc.z(6)} {input_out:rsc.z(5)} {input_out:rsc.z(4)} {input_out:rsc.z(3)} {input_out:rsc.z(2)} {input_out:rsc.z(1)} {input_out:rsc.z(0)} -symbol right_portout noname -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-51 -attr oid 48 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/input_out:rsc.z}
+load portBus psum_out:rsc.z(15:0) output 16 {psum_out:rsc.z(15)} {psum_out:rsc.z(14)} {psum_out:rsc.z(13)} {psum_out:rsc.z(12)} {psum_out:rsc.z(11)} {psum_out:rsc.z(10)} {psum_out:rsc.z(9)} {psum_out:rsc.z(8)} {psum_out:rsc.z(7)} {psum_out:rsc.z(6)} {psum_out:rsc.z(5)} {psum_out:rsc.z(4)} {psum_out:rsc.z(3)} {psum_out:rsc.z(2)} {psum_out:rsc.z(1)} {psum_out:rsc.z(0)} -symbol right_portout noname -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-52 -attr oid 49 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_out:rsc.z}
+load port {ccs_ccore_start:rsc.dat} input -symbol left_portin noname -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-53 -attr oid 50 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ccs_ccore_start:rsc.dat}
+load port {ccs_ccore_en} input -symbol left_portin noname -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-54 -attr oid 51 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ccs_ccore_en}
 load symbol "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run" "orig" GEN \
  fillcolor 1 \
      port {clk} input \
@@ -657,10 +657,10 @@ load symbol "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run" "orig" GEN \
      portBus psum_out:rsc.z(15:0) output 16 {psum_out:rsc.z(15)} {psum_out:rsc.z(14)} {psum_out:rsc.z(13)} {psum_out:rsc.z(12)} {psum_out:rsc.z(11)} {psum_out:rsc.z(10)} {psum_out:rsc.z(9)} {psum_out:rsc.z(8)} {psum_out:rsc.z(7)} {psum_out:rsc.z(6)} {psum_out:rsc.z(5)} {psum_out:rsc.z(4)} {psum_out:rsc.z(3)} {psum_out:rsc.z(2)} {psum_out:rsc.z(1)} {psum_out:rsc.z(0)} \
      port {ccs_ccore_en} input \
 
-load net {clk} -attr xrf 08497741-736d-480c-a045-49ad72b71692-55 -attr oid 52 -attr vt d
-load net {clk} -port {clk} -attr xrf 08497741-736d-480c-a045-49ad72b71692-56 -attr oid 53 -attr vt d
-load net {arst_n} -attr xrf 08497741-736d-480c-a045-49ad72b71692-57 -attr oid 54 -attr vt d
-load net {arst_n} -port {arst_n} -attr xrf 08497741-736d-480c-a045-49ad72b71692-58 -attr oid 55 -attr vt d
+load net {clk} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-55 -attr oid 52 -attr vt d
+load net {clk} -port {clk} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-56 -attr oid 53 -attr vt d
+load net {arst_n} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-57 -attr oid 54 -attr vt d
+load net {arst_n} -port {arst_n} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-58 -attr oid 55 -attr vt d
 load net {input_in:rsc.dat(0)} -attr vt d
 load net {input_in:rsc.dat(1)} -attr vt d
 load net {input_in:rsc.dat(2)} -attr vt d
@@ -669,7 +669,7 @@ load net {input_in:rsc.dat(4)} -attr vt d
 load net {input_in:rsc.dat(5)} -attr vt d
 load net {input_in:rsc.dat(6)} -attr vt d
 load net {input_in:rsc.dat(7)} -attr vt d
-load netBundle {input_in:rsc.dat} 8 {input_in:rsc.dat(0)} {input_in:rsc.dat(1)} {input_in:rsc.dat(2)} {input_in:rsc.dat(3)} {input_in:rsc.dat(4)} {input_in:rsc.dat(5)} {input_in:rsc.dat(6)} {input_in:rsc.dat(7)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-59 -attr oid 56 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/input_in:rsc.dat}
+load netBundle {input_in:rsc.dat} 8 {input_in:rsc.dat(0)} {input_in:rsc.dat(1)} {input_in:rsc.dat(2)} {input_in:rsc.dat(3)} {input_in:rsc.dat(4)} {input_in:rsc.dat(5)} {input_in:rsc.dat(6)} {input_in:rsc.dat(7)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-59 -attr oid 56 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/input_in:rsc.dat}
 load net {input_in:rsc.dat(0)} -port {input_in:rsc.dat(0)} -attr vt d
 load net {input_in:rsc.dat(1)} -port {input_in:rsc.dat(1)} -attr vt d
 load net {input_in:rsc.dat(2)} -port {input_in:rsc.dat(2)} -attr vt d
@@ -678,7 +678,7 @@ load net {input_in:rsc.dat(4)} -port {input_in:rsc.dat(4)} -attr vt d
 load net {input_in:rsc.dat(5)} -port {input_in:rsc.dat(5)} -attr vt d
 load net {input_in:rsc.dat(6)} -port {input_in:rsc.dat(6)} -attr vt d
 load net {input_in:rsc.dat(7)} -port {input_in:rsc.dat(7)} -attr vt d
-load netBundle {input_in:rsc.dat} 8 {input_in:rsc.dat(0)} {input_in:rsc.dat(1)} {input_in:rsc.dat(2)} {input_in:rsc.dat(3)} {input_in:rsc.dat(4)} {input_in:rsc.dat(5)} {input_in:rsc.dat(6)} {input_in:rsc.dat(7)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-60 -attr oid 57 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/input_in:rsc.dat}
+load netBundle {input_in:rsc.dat} 8 {input_in:rsc.dat(0)} {input_in:rsc.dat(1)} {input_in:rsc.dat(2)} {input_in:rsc.dat(3)} {input_in:rsc.dat(4)} {input_in:rsc.dat(5)} {input_in:rsc.dat(6)} {input_in:rsc.dat(7)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-60 -attr oid 57 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/input_in:rsc.dat}
 load net {psum_in:rsc.dat(0)} -attr vt d
 load net {psum_in:rsc.dat(1)} -attr vt d
 load net {psum_in:rsc.dat(2)} -attr vt d
@@ -695,7 +695,7 @@ load net {psum_in:rsc.dat(12)} -attr vt d
 load net {psum_in:rsc.dat(13)} -attr vt d
 load net {psum_in:rsc.dat(14)} -attr vt d
 load net {psum_in:rsc.dat(15)} -attr vt d
-load netBundle {psum_in:rsc.dat} 16 {psum_in:rsc.dat(0)} {psum_in:rsc.dat(1)} {psum_in:rsc.dat(2)} {psum_in:rsc.dat(3)} {psum_in:rsc.dat(4)} {psum_in:rsc.dat(5)} {psum_in:rsc.dat(6)} {psum_in:rsc.dat(7)} {psum_in:rsc.dat(8)} {psum_in:rsc.dat(9)} {psum_in:rsc.dat(10)} {psum_in:rsc.dat(11)} {psum_in:rsc.dat(12)} {psum_in:rsc.dat(13)} {psum_in:rsc.dat(14)} {psum_in:rsc.dat(15)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-61 -attr oid 58 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_in:rsc.dat}
+load netBundle {psum_in:rsc.dat} 16 {psum_in:rsc.dat(0)} {psum_in:rsc.dat(1)} {psum_in:rsc.dat(2)} {psum_in:rsc.dat(3)} {psum_in:rsc.dat(4)} {psum_in:rsc.dat(5)} {psum_in:rsc.dat(6)} {psum_in:rsc.dat(7)} {psum_in:rsc.dat(8)} {psum_in:rsc.dat(9)} {psum_in:rsc.dat(10)} {psum_in:rsc.dat(11)} {psum_in:rsc.dat(12)} {psum_in:rsc.dat(13)} {psum_in:rsc.dat(14)} {psum_in:rsc.dat(15)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-61 -attr oid 58 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_in:rsc.dat}
 load net {psum_in:rsc.dat(0)} -port {psum_in:rsc.dat(0)} -attr vt d
 load net {psum_in:rsc.dat(1)} -port {psum_in:rsc.dat(1)} -attr vt d
 load net {psum_in:rsc.dat(2)} -port {psum_in:rsc.dat(2)} -attr vt d
@@ -712,7 +712,7 @@ load net {psum_in:rsc.dat(12)} -port {psum_in:rsc.dat(12)} -attr vt d
 load net {psum_in:rsc.dat(13)} -port {psum_in:rsc.dat(13)} -attr vt d
 load net {psum_in:rsc.dat(14)} -port {psum_in:rsc.dat(14)} -attr vt d
 load net {psum_in:rsc.dat(15)} -port {psum_in:rsc.dat(15)} -attr vt d
-load netBundle {psum_in:rsc.dat} 16 {psum_in:rsc.dat(0)} {psum_in:rsc.dat(1)} {psum_in:rsc.dat(2)} {psum_in:rsc.dat(3)} {psum_in:rsc.dat(4)} {psum_in:rsc.dat(5)} {psum_in:rsc.dat(6)} {psum_in:rsc.dat(7)} {psum_in:rsc.dat(8)} {psum_in:rsc.dat(9)} {psum_in:rsc.dat(10)} {psum_in:rsc.dat(11)} {psum_in:rsc.dat(12)} {psum_in:rsc.dat(13)} {psum_in:rsc.dat(14)} {psum_in:rsc.dat(15)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-62 -attr oid 59 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_in:rsc.dat}
+load netBundle {psum_in:rsc.dat} 16 {psum_in:rsc.dat(0)} {psum_in:rsc.dat(1)} {psum_in:rsc.dat(2)} {psum_in:rsc.dat(3)} {psum_in:rsc.dat(4)} {psum_in:rsc.dat(5)} {psum_in:rsc.dat(6)} {psum_in:rsc.dat(7)} {psum_in:rsc.dat(8)} {psum_in:rsc.dat(9)} {psum_in:rsc.dat(10)} {psum_in:rsc.dat(11)} {psum_in:rsc.dat(12)} {psum_in:rsc.dat(13)} {psum_in:rsc.dat(14)} {psum_in:rsc.dat(15)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-62 -attr oid 59 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_in:rsc.dat}
 load net {weight:rsc.dat(0)} -attr vt d
 load net {weight:rsc.dat(1)} -attr vt d
 load net {weight:rsc.dat(2)} -attr vt d
@@ -721,7 +721,7 @@ load net {weight:rsc.dat(4)} -attr vt d
 load net {weight:rsc.dat(5)} -attr vt d
 load net {weight:rsc.dat(6)} -attr vt d
 load net {weight:rsc.dat(7)} -attr vt d
-load netBundle {weight:rsc.dat} 8 {weight:rsc.dat(0)} {weight:rsc.dat(1)} {weight:rsc.dat(2)} {weight:rsc.dat(3)} {weight:rsc.dat(4)} {weight:rsc.dat(5)} {weight:rsc.dat(6)} {weight:rsc.dat(7)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-63 -attr oid 60 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/weight:rsc.dat}
+load netBundle {weight:rsc.dat} 8 {weight:rsc.dat(0)} {weight:rsc.dat(1)} {weight:rsc.dat(2)} {weight:rsc.dat(3)} {weight:rsc.dat(4)} {weight:rsc.dat(5)} {weight:rsc.dat(6)} {weight:rsc.dat(7)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-63 -attr oid 60 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/weight:rsc.dat}
 load net {weight:rsc.dat(0)} -port {weight:rsc.dat(0)} -attr vt d
 load net {weight:rsc.dat(1)} -port {weight:rsc.dat(1)} -attr vt d
 load net {weight:rsc.dat(2)} -port {weight:rsc.dat(2)} -attr vt d
@@ -730,7 +730,7 @@ load net {weight:rsc.dat(4)} -port {weight:rsc.dat(4)} -attr vt d
 load net {weight:rsc.dat(5)} -port {weight:rsc.dat(5)} -attr vt d
 load net {weight:rsc.dat(6)} -port {weight:rsc.dat(6)} -attr vt d
 load net {weight:rsc.dat(7)} -port {weight:rsc.dat(7)} -attr vt d
-load netBundle {weight:rsc.dat} 8 {weight:rsc.dat(0)} {weight:rsc.dat(1)} {weight:rsc.dat(2)} {weight:rsc.dat(3)} {weight:rsc.dat(4)} {weight:rsc.dat(5)} {weight:rsc.dat(6)} {weight:rsc.dat(7)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-64 -attr oid 61 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/weight:rsc.dat}
+load netBundle {weight:rsc.dat} 8 {weight:rsc.dat(0)} {weight:rsc.dat(1)} {weight:rsc.dat(2)} {weight:rsc.dat(3)} {weight:rsc.dat(4)} {weight:rsc.dat(5)} {weight:rsc.dat(6)} {weight:rsc.dat(7)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-64 -attr oid 61 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/weight:rsc.dat}
 load net {input_out:rsc.z(0)} -attr vt d
 load net {input_out:rsc.z(1)} -attr vt d
 load net {input_out:rsc.z(2)} -attr vt d
@@ -739,7 +739,7 @@ load net {input_out:rsc.z(4)} -attr vt d
 load net {input_out:rsc.z(5)} -attr vt d
 load net {input_out:rsc.z(6)} -attr vt d
 load net {input_out:rsc.z(7)} -attr vt d
-load netBundle {input_out:rsc.z} 8 {input_out:rsc.z(0)} {input_out:rsc.z(1)} {input_out:rsc.z(2)} {input_out:rsc.z(3)} {input_out:rsc.z(4)} {input_out:rsc.z(5)} {input_out:rsc.z(6)} {input_out:rsc.z(7)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-65 -attr oid 62 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/input_out:rsc.z}
+load netBundle {input_out:rsc.z} 8 {input_out:rsc.z(0)} {input_out:rsc.z(1)} {input_out:rsc.z(2)} {input_out:rsc.z(3)} {input_out:rsc.z(4)} {input_out:rsc.z(5)} {input_out:rsc.z(6)} {input_out:rsc.z(7)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-65 -attr oid 62 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/input_out:rsc.z}
 load net {input_out:rsc.z(0)} -port {input_out:rsc.z(0)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/input_out:rsc.z}
 load net {input_out:rsc.z(1)} -port {input_out:rsc.z(1)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/input_out:rsc.z}
 load net {input_out:rsc.z(2)} -port {input_out:rsc.z(2)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/input_out:rsc.z}
@@ -764,7 +764,7 @@ load net {psum_out:rsc.z(12)} -attr vt d
 load net {psum_out:rsc.z(13)} -attr vt d
 load net {psum_out:rsc.z(14)} -attr vt d
 load net {psum_out:rsc.z(15)} -attr vt d
-load netBundle {psum_out:rsc.z} 16 {psum_out:rsc.z(0)} {psum_out:rsc.z(1)} {psum_out:rsc.z(2)} {psum_out:rsc.z(3)} {psum_out:rsc.z(4)} {psum_out:rsc.z(5)} {psum_out:rsc.z(6)} {psum_out:rsc.z(7)} {psum_out:rsc.z(8)} {psum_out:rsc.z(9)} {psum_out:rsc.z(10)} {psum_out:rsc.z(11)} {psum_out:rsc.z(12)} {psum_out:rsc.z(13)} {psum_out:rsc.z(14)} {psum_out:rsc.z(15)} -attr xrf 08497741-736d-480c-a045-49ad72b71692-66 -attr oid 63 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_out:rsc.z}
+load netBundle {psum_out:rsc.z} 16 {psum_out:rsc.z(0)} {psum_out:rsc.z(1)} {psum_out:rsc.z(2)} {psum_out:rsc.z(3)} {psum_out:rsc.z(4)} {psum_out:rsc.z(5)} {psum_out:rsc.z(6)} {psum_out:rsc.z(7)} {psum_out:rsc.z(8)} {psum_out:rsc.z(9)} {psum_out:rsc.z(10)} {psum_out:rsc.z(11)} {psum_out:rsc.z(12)} {psum_out:rsc.z(13)} {psum_out:rsc.z(14)} {psum_out:rsc.z(15)} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-66 -attr oid 63 -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_out:rsc.z}
 load net {psum_out:rsc.z(0)} -port {psum_out:rsc.z(0)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_out:rsc.z}
 load net {psum_out:rsc.z(1)} -port {psum_out:rsc.z(1)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_out:rsc.z}
 load net {psum_out:rsc.z(2)} -port {psum_out:rsc.z(2)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_out:rsc.z}
@@ -781,13 +781,13 @@ load net {psum_out:rsc.z(12)} -port {psum_out:rsc.z(12)} -attr vt d -attr @path 
 load net {psum_out:rsc.z(13)} -port {psum_out:rsc.z(13)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_out:rsc.z}
 load net {psum_out:rsc.z(14)} -port {psum_out:rsc.z(14)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_out:rsc.z}
 load net {psum_out:rsc.z(15)} -port {psum_out:rsc.z(15)} -attr vt d -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_out:rsc.z}
-load net {ccs_ccore_start:rsc.dat} -attr xrf 08497741-736d-480c-a045-49ad72b71692-67 -attr oid 64 -attr vt d
-load net {ccs_ccore_start:rsc.dat} -port {ccs_ccore_start:rsc.dat} -attr xrf 08497741-736d-480c-a045-49ad72b71692-68 -attr oid 65 -attr vt d
-load net {ccs_ccore_en} -attr xrf 08497741-736d-480c-a045-49ad72b71692-69 -attr oid 66 -attr vt d
-load net {ccs_ccore_en} -port {ccs_ccore_en} -attr xrf 08497741-736d-480c-a045-49ad72b71692-70 -attr oid 67 -attr vt d
-load inst "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run:inst" "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run" "orig" -attr xrf 08497741-736d-480c-a045-49ad72b71692-71 -attr oid 68 -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run:inst} -attr area 485.804122 -attr delay 2.267831 -attr hier "/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run"
-load net {clk} -pin  "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run:inst" {clk} -attr xrf 08497741-736d-480c-a045-49ad72b71692-72 -attr oid 69 -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/clk}
-load net {arst_n} -pin  "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run:inst" {arst_n} -attr xrf 08497741-736d-480c-a045-49ad72b71692-73 -attr oid 70 -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/arst_n}
+load net {ccs_ccore_start:rsc.dat} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-67 -attr oid 64 -attr vt d
+load net {ccs_ccore_start:rsc.dat} -port {ccs_ccore_start:rsc.dat} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-68 -attr oid 65 -attr vt d
+load net {ccs_ccore_en} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-69 -attr oid 66 -attr vt d
+load net {ccs_ccore_en} -port {ccs_ccore_en} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-70 -attr oid 67 -attr vt d
+load inst "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run:inst" "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run" "orig" -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-71 -attr oid 68 -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run:inst} -attr area 485.804122 -attr delay 2.267831 -attr hier "/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run"
+load net {clk} -pin  "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run:inst" {clk} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-72 -attr oid 69 -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/clk}
+load net {arst_n} -pin  "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run:inst" {arst_n} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-73 -attr oid 70 -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/arst_n}
 load net {input_in:rsc.dat(0)} -pin  "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run:inst" {input_in:rsc.dat(0)} -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/input_in:rsc.dat}
 load net {input_in:rsc.dat(1)} -pin  "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run:inst" {input_in:rsc.dat(1)} -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/input_in:rsc.dat}
 load net {input_in:rsc.dat(2)} -pin  "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run:inst" {input_in:rsc.dat(2)} -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/input_in:rsc.dat}
@@ -844,6 +844,6 @@ load net {psum_out:rsc.z(12)} -pin  "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run
 load net {psum_out:rsc.z(13)} -pin  "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run:inst" {psum_out:rsc.z(13)} -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_out:rsc.z}
 load net {psum_out:rsc.z(14)} -pin  "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run:inst" {psum_out:rsc.z(14)} -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_out:rsc.z}
 load net {psum_out:rsc.z(15)} -pin  "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run:inst" {psum_out:rsc.z(15)} -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/psum_out:rsc.z}
-load net {ccs_ccore_en} -pin  "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run:inst" {ccs_ccore_en} -attr xrf 08497741-736d-480c-a045-49ad72b71692-74 -attr oid 71 -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ccs_ccore_en}
+load net {ccs_ccore_en} -pin  "ProcessingElement<IDTYPE,WDTYPE,ODTYPE>:run:inst" {ccs_ccore_en} -attr xrf c801be18-3a17-4321-99e3-8b45a2818e8f-74 -attr oid 71 -attr vt dc -attr @path {/ProcessingElement<IDTYPE,WDTYPE,ODTYPE>/ccs_ccore_en}
 ### END MODULE 
 

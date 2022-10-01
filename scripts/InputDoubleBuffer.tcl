@@ -51,7 +51,7 @@ directive set /InputDoubleBuffer<4096,16,16>/InputDoubleBufferReader<4096,16,16>
 # for the current_buffer in writer():
 directive set /InputDoubleBuffer<4096,16,16>/InputDoubleBufferWriter<4096,16,16>/run/while:current_buffer.data.value -WORD_WIDTH 128
 
-return -code error "Remove this once implemented."
+#return -code error "Remove this once implemented."
 # Your code ends here
 # -------------------------------
 

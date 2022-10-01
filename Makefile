@@ -42,6 +42,9 @@ c_test: test/Conv.v1
 	cd test/Conv.v1 && make -f scverify/Verify_orig_cxx_osci.mk clean
 	cd test/Conv.v1 && make -f scverify/Verify_orig_cxx_osci.mk sim
 
+
+# this is the command to run the rtl-level test of the generated Conv
+# module
 rtl_test: build/Conv.v1/rtl.v
 	$(CATAPULT) -shell -file scripts/run_rtl_test.tcl
 

@@ -81,6 +81,33 @@ solution library add {[CCORE] ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1}
 go libraries
 directive set -CLOCKS {clk {-CLOCK_PERIOD 5.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -CLOCK_HIGH_TIME 2.5 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND async -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_ACTIVE high}}
 directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/ProcessingElement<IDTYPE,WDTYPE,ODTYPE> -MAP_TO_MODULE {[CCORE] ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1}
-directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16> -REGISTER_THRESHOLD 4096
 go assembly
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run -DESIGN_GOAL latency
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run -CLOCK_OVERHEAD 0.000000
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/accum_buf:rsc -INTERLEAVE 16
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/accum_buf:rsc -BLOCK_SIZE 256
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16> -REGISTER_THRESHOLD 4096
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/weight_reg_array:rsc -MAP_TO_MODULE {[Register]}
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/inputIn_reg_array:rsc -MAP_TO_MODULE {[Register]}
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/inputOut_reg_array:rsc -MAP_TO_MODULE {[Register]}
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/psumIn_reg_array:rsc -MAP_TO_MODULE {[Register]}
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/psumOut_reg_array:rsc -MAP_TO_MODULE {[Register]}
 go architect
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/step:if#2:else:for:read_mem(accum_buf:rsc(0)(0).@) -IGNORE_DEPENDENCY_FROM step:if#3:for:write_mem(accum_buf:rsc(0)(0).@)
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/step:if#2:else:for:read_mem(accum_buf:rsc(0)(1).@)#1 -IGNORE_DEPENDENCY_FROM step:if#3:for:write_mem(accum_buf:rsc(0)(1).@)#1
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/step:if#2:else:for:read_mem(accum_buf:rsc(0)(2).@)#2 -IGNORE_DEPENDENCY_FROM step:if#3:for:write_mem(accum_buf:rsc(0)(2).@)#2
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/step:if#2:else:for:read_mem(accum_buf:rsc(0)(3).@)#3 -IGNORE_DEPENDENCY_FROM step:if#3:for:write_mem(accum_buf:rsc(0)(3).@)#3
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/step:if#2:else:for:read_mem(accum_buf:rsc(0)(4).@)#4 -IGNORE_DEPENDENCY_FROM step:if#3:for:write_mem(accum_buf:rsc(0)(4).@)#4
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/step:if#2:else:for:read_mem(accum_buf:rsc(0)(5).@)#5 -IGNORE_DEPENDENCY_FROM step:if#3:for:write_mem(accum_buf:rsc(0)(5).@)#5
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/step:if#2:else:for:read_mem(accum_buf:rsc(0)(6).@)#6 -IGNORE_DEPENDENCY_FROM step:if#3:for:write_mem(accum_buf:rsc(0)(6).@)#6
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/step:if#2:else:for:read_mem(accum_buf:rsc(0)(7).@)#7 -IGNORE_DEPENDENCY_FROM step:if#3:for:write_mem(accum_buf:rsc(0)(7).@)#7
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/step:if#2:else:for:read_mem(accum_buf:rsc(0)(8).@)#8 -IGNORE_DEPENDENCY_FROM step:if#3:for:write_mem(accum_buf:rsc(0)(8).@)#8
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/step:if#2:else:for:read_mem(accum_buf:rsc(0)(9).@)#9 -IGNORE_DEPENDENCY_FROM step:if#3:for:write_mem(accum_buf:rsc(0)(9).@)#9
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/step:if#2:else:for:read_mem(accum_buf:rsc(0)(10).@)#10 -IGNORE_DEPENDENCY_FROM step:if#3:for:write_mem(accum_buf:rsc(0)(10).@)#10
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/step:if#2:else:for:read_mem(accum_buf:rsc(0)(11).@)#11 -IGNORE_DEPENDENCY_FROM step:if#3:for:write_mem(accum_buf:rsc(0)(11).@)#11
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/step:if#2:else:for:read_mem(accum_buf:rsc(0)(12).@)#12 -IGNORE_DEPENDENCY_FROM step:if#3:for:write_mem(accum_buf:rsc(0)(12).@)#12
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/step:if#2:else:for:read_mem(accum_buf:rsc(0)(13).@)#13 -IGNORE_DEPENDENCY_FROM step:if#3:for:write_mem(accum_buf:rsc(0)(13).@)#13
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/step:if#2:else:for:read_mem(accum_buf:rsc(0)(14).@)#14 -IGNORE_DEPENDENCY_FROM step:if#3:for:write_mem(accum_buf:rsc(0)(14).@)#14
+directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/step:if#2:else:for:read_mem(accum_buf:rsc(0)(15).@)#15 -IGNORE_DEPENDENCY_FROM step:if#3:for:write_mem(accum_buf:rsc(0)(15).@)#15
+go allocate
+go extract

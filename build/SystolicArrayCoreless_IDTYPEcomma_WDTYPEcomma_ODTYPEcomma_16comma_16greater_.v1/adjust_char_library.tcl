@@ -6,6 +6,10 @@
 # Run this script in Catapult LB with the base library loaded or uncomment the "library load" command(s)
 #library load /cad/mentor/2019.11/Catapult_Synthesis_10.4b-841621/Mgc_home/pkgs/siflibs/nangate/nangate-45nm_beh.lib
 library set /LIBS/nangate-45nm_beh/MODS/mgc_add/PARAMETERS/width_b -- -CHAR_RANGE {1, 2 to 2, 4 to 32, 64 to 64}
+library set /LIBS/nangate-45nm_beh/MODS/mgc_nor/PARAMETERS/ninps -- -CHAR_RANGE {2 to 2, 4 to 32, 48}
+library set /LIBS/nangate-45nm_beh/MODS/mgc_reg_pos/PARAMETERS/has_enable -- -CHAR_RANGE {0 to 0, 1}
+library set /LIBS/nangate-45nm_beh/MODS/mgc_reg_pos/PARAMETERS/enable_on -- -CHAR_RANGE {0 to 0, 1}
+library set /LIBS/nangate-45nm_beh/MODS/mgc_mux1hot/PARAMETERS/ctrlw -- -CHAR_RANGE {1, 2 to 2, 4 to 32}
 # The "library characterize" command below requires that: 
 #   1. characterization directory set in the library exists and write accessible;
 #   2. paths to technology libraries are set to correct locations;

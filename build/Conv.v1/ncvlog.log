@@ -1,0 +1,5 @@
+ncvlog(64): 15.20-s022: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+module unreg_hier (
+                |
+ncvlog: *W,RECOMP (concat_sim_rtl.v,25544|16): recompiling design unit work.unreg_hier.
+	First compiled from line 21326 of concat_sim_rtl.v.

@@ -141,7 +141,7 @@ void run_layer(Params params){
 
 CCS_MAIN(int argc, char *argv[])
 {
-  /*
+  
     Params params = {
         14, // OY1
         14, // OX1
@@ -153,9 +153,9 @@ CCS_MAIN(int argc, char *argv[])
         3, // FY
         1 // STRIDE
     };
-*/
 
-    Params params = {
+
+/*    Params params = {
         1, // OY1
         1, // OX1
         3, // OY0
@@ -166,11 +166,11 @@ CCS_MAIN(int argc, char *argv[])
         2, // FY
         1 // STRIDE
     };
+*/
 
+  //  run_layer<3, 3, 4, 4, 2, 1, 4, 4>(params);
 
-    run_layer<3, 3, 4, 4, 2, 1, 4, 4>(params);
-
-  //  run_layer<56, 56, 64, 64, 3, 1, 16, 16>(params);  // OX = OY = 56, OC = 64, IC = 64, FX = FY = 3, stride = 1, IC0 = OC0 = 16
+   run_layer<56, 56, 64, 64, 3, 1, 16, 16>(params);  // OX = OY = 56, OC = 64, IC = 64, FX = FY = 3, stride = 1, IC0 = OC0 = 16
 
 
     // run_layer<28, 28, 128, 128, 3, 1>();

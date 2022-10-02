@@ -1,0 +1,4 @@
+include /cad/cadence/INCISIVE15.20.022/tools/inca/files/cds.lib
+define mgc_hls ./mgc_hls
+define work ./work
+define ccs_sample_mem_lib ./ccs_sample_mem_lib
